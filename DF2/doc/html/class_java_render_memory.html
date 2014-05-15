@@ -1,0 +1,1375 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>DF2: クラス JavaRenderMemory</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 作成： Doxygen 1.5.5 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス JavaRenderMemory</h1><!-- doxytag: class="JavaRenderMemory" --><!-- doxytag: inherits="JavaRenderAbstract" -->配列を使用したレンダ。  
+<a href="#_details">[詳細]</a>
+<p>
+<div class="dynheader">
+JavaRenderMemoryに対する継承グラフ</div>
+<div class="dynsection">
+<center><font size="2">[<a href="graph_legend.html">凡例</a>]</font></center></div>
+<div class="dynheader">
+JavaRenderMemoryのコラボレーション図</div>
+<div class="dynsection">
+<p><center><img src="class_java_render_memory__coll__graph.png" border="0" usemap="#_java_render_memory__coll__map" alt="Collaboration graph"></center>
+<center><font size="2">[<a href="graph_legend.html">凡例</a>]</font></center></div>
+
+<p>
+<a href="class_java_render_memory-members.html">すべてのメンバ一覧</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#3344291aee9c98637a01ce30e5b24591">JavaRenderMemory</a> (int <a class="el" href="class_java_render_abstract.html#14daebdbea98ea128ac8175bd3e49c37">width</a>, int <a class="el" href="class_java_render_abstract.html#81e25b5debb4f4117860727ea4543004">height</a>, Component *component, boolean is_create_polygon_class=true)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#7ff5b5ed42fcf43d70901867df708a87">JavaRenderMemory</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#8e61ec81a20ab58f2e1f4f6fe13892fa">clear</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#a76a8537809e56ec39f43e8928a76169">repaint</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#5974d64362e826971f90962f8bd8344a">paint</a> (Graphics *_graphics, ImageObserver *observer)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#1842584716719921d69a774c81873d9e">getPixel</a> (int x, int y)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#7cc80f58d52db22fbf9fcc700ed74a12">setPixel</a> (int color, int x, int y)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#c5866a718970bf5aed7c85bf6391e387">drawLine</a> (int color, int x1, int y1, int x2, int y2)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#e1c14b5e93769cf03ff9c0e22dbb1a7b">drawPolygon</a> (int *px, int *py, int *pc, int cnt)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#95be138fb823c62e0319602a0eb58b85">drawPolyline</a> (int *px, int *py, int *pc, int cnt)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#0fc7afccf84763f1c92ebfbe85c78acb">fillPolygon</a> (int *px, int *py, int *pc, <a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *texture, int *ptx, int *pty, int cnt)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#e36c86387f2aecd38dd3d7845fc5864a">fillPolygonAlpha</a> (int *px, int *py, int *pc, <a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *texture, int *ptx, int *pty, int cnt)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#d96467a8fe5a36cb7ddf16ef99980a7f">fillPolygonGouraud</a> (int *px, int *py, int *pc, <a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *texture, int *ptx, int *pty, int cnt)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#4d87da370271f71820c7cb5d22e23771">fillPolygonGouraudAlpha</a> (int *px, int *py, int *pc, <a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *texture, int *ptx, int *pty, int cnt)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#9c5e41bee9f5b497e077593de2b941e0">drawString</a> (int color, int x, int y, String string, boolean proportional, <a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *render_font)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#398922b7c983cddf00b234d0739205eb">drawString</a> (int color, int x, int y, int unit16, String string, boolean proportional, <a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *render_font)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual Rectangle&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#98259d9501cedbb05605a21dec748beb">calcString</a> (int color, int x, int y, int unit16, String string, boolean proportional, <a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *render_font)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#9a4967bf4e771671864333be70f6f3a5">render</a> (int render_mode, int *px, int *py, int *pc, <a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *texture, int *ptx, int *pty, const char *string, int cnt)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#e7a04550f1ffc93ada2830cd700f1929">render</a> (<a class="el" href="class_java_render_static_1_1_polygon.html">Polygon</a> *_poly, <a class="el" href="class_java_render_static_1_1_vertex.html">Vertex</a> **vert)</td></tr>
+
+<tr><td colspan="2"><br><h2>Static Public 変数</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static <a class="el" href="class_java_render_memory_1_1_v_e_r_t.html">VERT</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#4253d31fc86f873db35410192b7e076e">verts</a> [100]</td></tr>
+
+<tr><td colspan="2"><br><h2>Protected メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#19c8c1f21325039f2abdea97abdca47b">create_polygon_class</a> ()</td></tr>
+
+<tr><td colspan="2"><br><h2>Protected 変数</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#1cc5a5d4ba6f875143ee24b46fc63ed0">pixOff</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">MemoryImageSource *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#727b00c37a0ad12c50d91e73ae86d39f">misOff</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">Image *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#a62cf8c4bc081e91eff94c2edbdc9709">imageOff</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int(*&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#d62d5db0f811b76d56550e3affc372d7">b_tbl</a> )[256]</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html">FillPolygon</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#4f2c35ab07d4700f666ca938f4e9ef73">fill_solid</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html">FillPolygon</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#48e866e57780b989708712e07a089be0">fill_alpha</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html">FillPolygon</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#406e2aa6bfd85ef26f41f92839ed77c0">fill_gouraud</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html">FillPolygon</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#b855ef8ea51008475288b1c83a871cc3">fill_gouraud_alpha</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html">FillPolygon</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#101c2458619ddae6d73b51f86f28cfd7">fill_texture</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html">FillPolygon</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#d7772eeddc557c881fdfb1b0ce39e27f">fill_texture_alpha</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html">FillPolygon</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#1c2987b411cabea05bcfd1ebe8ffeb6a">fill_texture_gouraud</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html">FillPolygon</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#65946078dd93186964612c5e6b989ee4">fill_texture_gouraud_alpha</a></td></tr>
+
+<tr><td colspan="2"><br><h2>Private メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#cca89c6407c27beead505dabc20b13a2">_y</a> (int y)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">Rectangle&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#bb3efcd111dbf26dea18ca46dd661cf9">draw_string</a> (int color, int x, int y, int unit16, String string, boolean proportional, <a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *_render_font, boolean calc)</td></tr>
+
+<tr><td colspan="2"><br><h2>フレンド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory.html#4ef553264dece6bf31f77fdc665c7604">FillPolygon</a></td></tr>
+
+<tr><td colspan="2"><br><h2>構成</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html">FillPolygon</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ポリゴン塗りつぶしの基本クラス。  <a href="class_java_render_memory_1_1_fill_polygon.html#_details">[詳細]</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon_alpha.html">FillPolygonAlpha</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">アルファブレンドポリゴン塗りつぶしクラス。  <a href="class_java_render_memory_1_1_fill_polygon_alpha.html#_details">[詳細]</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon_gouraud.html">FillPolygonGouraud</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">グラデーションポリゴン塗りつぶしクラス。  <a href="class_java_render_memory_1_1_fill_polygon_gouraud.html#_details">[詳細]</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon_gouraud_alpha.html">FillPolygonGouraudAlpha</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">グラデーション + アルファブレンドポリゴン塗りつぶしクラス。  <a href="class_java_render_memory_1_1_fill_polygon_gouraud_alpha.html#_details">[詳細]</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon_solid.html">FillPolygonSolid</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">単色ポリゴン塗りつぶしクラス。  <a href="class_java_render_memory_1_1_fill_polygon_solid.html#_details">[詳細]</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon_texture.html">FillPolygonTexture</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">テクスチャポリゴン塗りつぶしクラス。  <a href="class_java_render_memory_1_1_fill_polygon_texture.html#_details">[詳細]</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon_texture_alpha.html">FillPolygonTextureAlpha</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">テクスチャ + アルファブレンドポリゴン塗りつぶしクラス。  <a href="class_java_render_memory_1_1_fill_polygon_texture_alpha.html#_details">[詳細]</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon_texture_common.html">FillPolygonTextureCommon</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">テクスチャポリゴン塗りつぶしの基本クラス。  <a href="class_java_render_memory_1_1_fill_polygon_texture_common.html#_details">[詳細]</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon_texture_gouraud.html">FillPolygonTextureGouraud</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">テクスチャ + グラデーションポリゴン塗りつぶしクラス。  <a href="class_java_render_memory_1_1_fill_polygon_texture_gouraud.html#_details">[詳細]</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon_texture_gouraud_alpha.html">FillPolygonTextureGouraudAlpha</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">テクスチャ + グラデーション + アルファブレンドポリゴン塗りつぶしクラス。  <a href="class_java_render_memory_1_1_fill_polygon_texture_gouraud_alpha.html#_details">[詳細]</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_v_e_r_t.html">VERT</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">一時頂点バッファ。  <a href="class_java_render_memory_1_1_v_e_r_t.html#_details">[詳細]</a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>説明</h2>
+配列を使用したレンダ。 
+<p>
+<dl class="since" compact><dt><b>から:</b></dt><dd>1.0 matsushima </dd></dl>
+<dl class="author" compact><dt><b>作者:</b></dt><dd>1.0 matsushima </dd></dl>
+<dl class="version" compact><dt><b>バージョン:</b></dt><dd></dd></dl>
+<dl class="rcs" compact><dt><b>Id</b></dt><dd><a class="el" href="_java_render_memory_8cpp.html">JavaRenderMemory.cpp</a>,v 1.50 2008/03/06 16:42:45 matsushima Exp </dd></dl>
+<p>
+<dl class="rcs" compact><dt><b>Log</b></dt><dd><a class="el" href="_java_render_memory_8cpp.html">JavaRenderMemory.cpp</a>,v </dd></dl>
+Revision 1.50 2008/03/06 16:42:45 matsushima JavaDoc/Doxygen 対応<p>
+Revision 1.49 2008/03/06 15:39:50 matsushima h/cpp 共通化<p>
+Revision 1.48 2008/03/04 17:21:01 matsushima Java/C++ 共通化<p>
+Revision 1.47 2008/03/03 02:10:50 matsushima render ふりわけを <a class="el" href="class_java_render_buffer.html" title="レンダのバッファ。">JavaRenderBuffer</a> -&gt; JavaRenderXxx テクスチャを int[] -&gt; <a class="el" href="class_java_render_texture.html" title="ポリゴン塗りつぶし用テクスチャ、文字列描画用フォント。...">JavaRenderTexture</a><p>
+Revision 1.46 2008/02/26 07:59:42 matsushima no message<p>
+Revision 1.45 2008/02/24 05:52:06 matsushima JavaRenderInterface -&gt; <a class="el" href="class_java_render.html" title="レンダインターフェース。">JavaRender</a> <a class="el" href="class_java_render.html" title="レンダインターフェース。">JavaRender</a> -&gt; <a class="el" href="class_java_render_buffer.html" title="レンダのバッファ。">JavaRenderBuffer</a><p>
+Revision 1.44 2008/02/23 23:45:19 matsushima 高速化<p>
+Revision 1.43 2007/12/01 22:14:14 matsushima 再登録<p>
+Revision 1.39 2007/05/23 18:30:22 matsushima <a class="el" href="class_java_render.html" title="レンダインターフェース。">JavaRender</a> カプセル化<p>
+Revision 1.30 2007/05/14 13:38:20 matsushima Java/C++ 共通化<p>
+Revision 1.28 2007/05/10 22:29:39 matsushima Java/C++ 共通化<p>
+Revision 1.26 2007/05/08 08:33:25 matsushima <a class="el" href="class_java_render_memory.html" title="配列を使用したレンダ。">JavaRenderMemory</a> から <a class="el" href="class_java_render_memory_s_s_e2.html" title="配列を使用したレンダ(SSE2 + MMX 使用)。">JavaRenderMemorySSE2</a> を分離<p>
+Revision 1.25 2007/05/07 18:53:16 matsushima gouraud_alpha アセンブラ<p>
+Revision 1.22 2007/05/06 18:00:09 matsushima render_mode<p>
+Revision 1.20 2007/05/05 18:06:03 matsushima clear アセンブラ<p>
+Revision 1.18 2007/05/04 08:08:55 matsushima drawLine アセンブラ<p>
+Revision 1.3 2007/04/23 17:05:48 matsushima リプレース<p>
+Revision 1.2 2006/08/18 11:40:23 matsushima mode<p>
+Revision 1.1.1.1 2006/08/17 20:26:48 matsushima new <hr><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" name="3344291aee9c98637a01ce30e5b24591"></a><!-- doxytag: member="JavaRenderMemory::JavaRenderMemory" ref="3344291aee9c98637a01ce30e5b24591" args="(int width, int height, Component *component, boolean is_create_polygon_class=true)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">JavaRenderMemory::JavaRenderMemory           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Component *&nbsp;</td>
+          <td class="paramname"> <em>component</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&nbsp;</td>
+          <td class="paramname"> <em>is_create_polygon_class</em> = <code>true</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="7ff5b5ed42fcf43d70901867df708a87"></a><!-- doxytag: member="JavaRenderMemory::JavaRenderMemory" ref="7ff5b5ed42fcf43d70901867df708a87" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual JavaRenderMemory::JavaRenderMemory           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<hr><h2>関数</h2>
+<a class="anchor" name="8e61ec81a20ab58f2e1f4f6fe13892fa"></a><!-- doxytag: member="JavaRenderMemory::clear" ref="8e61ec81a20ab58f2e1f4f6fe13892fa" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderMemory::clear           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p><a class="el" href="class_java_render_abstract.html#1bd63eec74fda0410360e253514f2295">JavaRenderAbstract</a>を実装しています。</p>
+
+<p><a class="el" href="class_java_render_memory_s_s_e2.html#daeaf18fb5c73886d0c8fed8c857f167">JavaRenderMemorySSE2</a>で再定義されています。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="a76a8537809e56ec39f43e8928a76169"></a><!-- doxytag: member="JavaRenderMemory::repaint" ref="a76a8537809e56ec39f43e8928a76169" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderMemory::repaint           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p><a class="el" href="class_java_render_abstract.html#836e4b36fb61952a79cdca694672aa48">JavaRenderAbstract</a>を実装しています。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="5974d64362e826971f90962f8bd8344a"></a><!-- doxytag: member="JavaRenderMemory::paint" ref="5974d64362e826971f90962f8bd8344a" args="(Graphics *_graphics, ImageObserver *observer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderMemory::paint           </td>
+          <td>(</td>
+          <td class="paramtype">Graphics *&nbsp;</td>
+          <td class="paramname"> <em>_graphics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ImageObserver *&nbsp;</td>
+          <td class="paramname"> <em>observer</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p><a class="el" href="class_java_render_abstract.html#02093bc739490e352ef966b2c87c2a01">JavaRenderAbstract</a>を実装しています。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="cca89c6407c27beead505dabc20b13a2"></a><!-- doxytag: member="JavaRenderMemory::_y" ref="cca89c6407c27beead505dabc20b13a2" args="(int y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int JavaRenderMemory::_y           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="1842584716719921d69a774c81873d9e"></a><!-- doxytag: member="JavaRenderMemory::getPixel" ref="1842584716719921d69a774c81873d9e" args="(int x, int y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int JavaRenderMemory::getPixel           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p><a class="el" href="class_java_render_abstract.html#a337f6e4e4ea9cb2387db3aa6067e893">JavaRenderAbstract</a>を実装しています。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="7cc80f58d52db22fbf9fcc700ed74a12"></a><!-- doxytag: member="JavaRenderMemory::setPixel" ref="7cc80f58d52db22fbf9fcc700ed74a12" args="(int color, int x, int y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderMemory::setPixel           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p><a class="el" href="class_java_render_abstract.html#1129565a8cd91683c050807cb41b08ef">JavaRenderAbstract</a>を実装しています。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="c5866a718970bf5aed7c85bf6391e387"></a><!-- doxytag: member="JavaRenderMemory::drawLine" ref="c5866a718970bf5aed7c85bf6391e387" args="(int color, int x1, int y1, int x2, int y2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderMemory::drawLine           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p><a class="el" href="class_java_render_abstract.html#4179933953050a9f56c613194a6d63be">JavaRenderAbstract</a>を実装しています。</p>
+
+<p><a class="el" href="class_java_render_memory_s_s_e2.html#88d41b5692a46e0a1f363ba506f0ecdd">JavaRenderMemorySSE2</a>で再定義されています。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="e1c14b5e93769cf03ff9c0e22dbb1a7b"></a><!-- doxytag: member="JavaRenderMemory::drawPolygon" ref="e1c14b5e93769cf03ff9c0e22dbb1a7b" args="(int *px, int *py, int *pc, int cnt)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderMemory::drawPolygon           </td>
+          <td>(</td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>px</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>py</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>pc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>cnt</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p><a class="el" href="class_java_render_abstract.html#f61013f8df27b827fefc243c2252f6df">JavaRenderAbstract</a>を実装しています。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="95be138fb823c62e0319602a0eb58b85"></a><!-- doxytag: member="JavaRenderMemory::drawPolyline" ref="95be138fb823c62e0319602a0eb58b85" args="(int *px, int *py, int *pc, int cnt)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderMemory::drawPolyline           </td>
+          <td>(</td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>px</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>py</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>pc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>cnt</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p><a class="el" href="class_java_render_abstract.html#21145cb8a05d28f476061b8148e1bba7">JavaRenderAbstract</a>を実装しています。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="0fc7afccf84763f1c92ebfbe85c78acb"></a><!-- doxytag: member="JavaRenderMemory::fillPolygon" ref="0fc7afccf84763f1c92ebfbe85c78acb" args="(int *px, int *py, int *pc, JavaRenderTexture *texture, int *ptx, int *pty, int cnt)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderMemory::fillPolygon           </td>
+          <td>(</td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>px</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>py</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>pc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *&nbsp;</td>
+          <td class="paramname"> <em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>ptx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>pty</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>cnt</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p><a class="el" href="class_java_render_abstract.html#f181546028cdb008340eadbc65a81b20">JavaRenderAbstract</a>を実装しています。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="e36c86387f2aecd38dd3d7845fc5864a"></a><!-- doxytag: member="JavaRenderMemory::fillPolygonAlpha" ref="e36c86387f2aecd38dd3d7845fc5864a" args="(int *px, int *py, int *pc, JavaRenderTexture *texture, int *ptx, int *pty, int cnt)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderMemory::fillPolygonAlpha           </td>
+          <td>(</td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>px</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>py</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>pc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *&nbsp;</td>
+          <td class="paramname"> <em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>ptx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>pty</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>cnt</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p><a class="el" href="class_java_render_abstract.html#3406c8774787f3aa2855f623cbf722a3">JavaRenderAbstract</a>を実装しています。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="d96467a8fe5a36cb7ddf16ef99980a7f"></a><!-- doxytag: member="JavaRenderMemory::fillPolygonGouraud" ref="d96467a8fe5a36cb7ddf16ef99980a7f" args="(int *px, int *py, int *pc, JavaRenderTexture *texture, int *ptx, int *pty, int cnt)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderMemory::fillPolygonGouraud           </td>
+          <td>(</td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>px</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>py</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>pc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *&nbsp;</td>
+          <td class="paramname"> <em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>ptx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>pty</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>cnt</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p><a class="el" href="class_java_render_abstract.html#da3b07dc203ab67d4aefb9c698a46b01">JavaRenderAbstract</a>を実装しています。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="4d87da370271f71820c7cb5d22e23771"></a><!-- doxytag: member="JavaRenderMemory::fillPolygonGouraudAlpha" ref="4d87da370271f71820c7cb5d22e23771" args="(int *px, int *py, int *pc, JavaRenderTexture *texture, int *ptx, int *pty, int cnt)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderMemory::fillPolygonGouraudAlpha           </td>
+          <td>(</td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>px</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>py</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>pc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *&nbsp;</td>
+          <td class="paramname"> <em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>ptx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>pty</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>cnt</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p><a class="el" href="class_java_render_abstract.html#f28778f3b2784fc81cd19c0cbc1a75b6">JavaRenderAbstract</a>を実装しています。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="9c5e41bee9f5b497e077593de2b941e0"></a><!-- doxytag: member="JavaRenderMemory::drawString" ref="9c5e41bee9f5b497e077593de2b941e0" args="(int color, int x, int y, String string, boolean proportional, JavaRenderTexture *render_font)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderMemory::drawString           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&nbsp;</td>
+          <td class="paramname"> <em>proportional</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *&nbsp;</td>
+          <td class="paramname"> <em>render_font</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p><a class="el" href="class_java_render_abstract.html#5feeeca14bc8c46dcc4cb27c8d1c389f">JavaRenderAbstract</a>を実装しています。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="398922b7c983cddf00b234d0739205eb"></a><!-- doxytag: member="JavaRenderMemory::drawString" ref="398922b7c983cddf00b234d0739205eb" args="(int color, int x, int y, int unit16, String string, boolean proportional, JavaRenderTexture *render_font)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderMemory::drawString           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>unit16</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&nbsp;</td>
+          <td class="paramname"> <em>proportional</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *&nbsp;</td>
+          <td class="paramname"> <em>render_font</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p><a class="el" href="class_java_render_abstract.html#34c1882ca6be8a0f12d47632eb948e56">JavaRenderAbstract</a>を実装しています。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="98259d9501cedbb05605a21dec748beb"></a><!-- doxytag: member="JavaRenderMemory::calcString" ref="98259d9501cedbb05605a21dec748beb" args="(int color, int x, int y, int unit16, String string, boolean proportional, JavaRenderTexture *render_font)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Rectangle JavaRenderMemory::calcString           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>unit16</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&nbsp;</td>
+          <td class="paramname"> <em>proportional</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *&nbsp;</td>
+          <td class="paramname"> <em>render_font</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p><a class="el" href="class_java_render_abstract.html#41250691ae345e7a12186bd11b1bc492">JavaRenderAbstract</a>を実装しています。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="bb3efcd111dbf26dea18ca46dd661cf9"></a><!-- doxytag: member="JavaRenderMemory::draw_string" ref="bb3efcd111dbf26dea18ca46dd661cf9" args="(int color, int x, int y, int unit16, String string, boolean proportional, JavaRenderTexture *_render_font, boolean calc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Rectangle JavaRenderMemory::draw_string           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>unit16</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&nbsp;</td>
+          <td class="paramname"> <em>proportional</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *&nbsp;</td>
+          <td class="paramname"> <em>_render_font</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&nbsp;</td>
+          <td class="paramname"> <em>calc</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="9a4967bf4e771671864333be70f6f3a5"></a><!-- doxytag: member="JavaRenderMemory::render" ref="9a4967bf4e771671864333be70f6f3a5" args="(int render_mode, int *px, int *py, int *pc, JavaRenderTexture *texture, int *ptx, int *pty, const char *string, int cnt)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderMemory::render           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>render_mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>px</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>py</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>pc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *&nbsp;</td>
+          <td class="paramname"> <em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>ptx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>pty</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>cnt</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p><a class="el" href="class_java_render_abstract.html#3405a80a2b5eaa5ce929a62b691efb13">JavaRenderAbstract</a>を実装しています。</p>
+
+<p><a class="el" href="class_java_render_memory_s_s_e2.html#74eb57b2237e12f4fdc01152ec5d0ee6">JavaRenderMemorySSE2</a>で再定義されています。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="e7a04550f1ffc93ada2830cd700f1929"></a><!-- doxytag: member="JavaRenderMemory::render" ref="e7a04550f1ffc93ada2830cd700f1929" args="(Polygon *_poly, Vertex **vert)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderMemory::render           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_java_render_static_1_1_polygon.html">Polygon</a> *&nbsp;</td>
+          <td class="paramname"> <em>_poly</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_java_render_static_1_1_vertex.html">Vertex</a> **&nbsp;</td>
+          <td class="paramname"> <em>vert</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p><a class="el" href="class_java_render_abstract.html#ad58d987a6a3930bb09f156d0fc044e9">JavaRenderAbstract</a>を実装しています。</p>
+
+<p><a class="el" href="class_java_render_memory_s_s_e2.html#c43da5a3dcb0a8a8da9494752defaf15">JavaRenderMemorySSE2</a>で再定義されています。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="19c8c1f21325039f2abdea97abdca47b"></a><!-- doxytag: member="JavaRenderMemory::create_polygon_class" ref="19c8c1f21325039f2abdea97abdca47b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JavaRenderMemory::create_polygon_class           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<hr><h2>フレンドと関連する関数</h2>
+<a class="anchor" name="4ef553264dece6bf31f77fdc665c7604"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon" ref="4ef553264dece6bf31f77fdc665c7604" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_java_render_memory_1_1_fill_polygon.html">FillPolygon</a><code> [friend]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<hr><h2>変数</h2>
+<a class="anchor" name="1cc5a5d4ba6f875143ee24b46fc63ed0"></a><!-- doxytag: member="JavaRenderMemory::pixOff" ref="1cc5a5d4ba6f875143ee24b46fc63ed0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int* <a class="el" href="class_java_render_memory.html#1cc5a5d4ba6f875143ee24b46fc63ed0">JavaRenderMemory::pixOff</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="727b00c37a0ad12c50d91e73ae86d39f"></a><!-- doxytag: member="JavaRenderMemory::misOff" ref="727b00c37a0ad12c50d91e73ae86d39f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MemoryImageSource* <a class="el" href="class_java_render_memory.html#727b00c37a0ad12c50d91e73ae86d39f">JavaRenderMemory::misOff</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="a62cf8c4bc081e91eff94c2edbdc9709"></a><!-- doxytag: member="JavaRenderMemory::imageOff" ref="a62cf8c4bc081e91eff94c2edbdc9709" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Image* <a class="el" href="class_java_render_memory.html#a62cf8c4bc081e91eff94c2edbdc9709">JavaRenderMemory::imageOff</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="d62d5db0f811b76d56550e3affc372d7"></a><!-- doxytag: member="JavaRenderMemory::b_tbl" ref="d62d5db0f811b76d56550e3affc372d7" args=")[256]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* <a class="el" href="class_java_render_memory.html#d62d5db0f811b76d56550e3affc372d7">JavaRenderMemory::b_tbl</a>)[256]<code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="4f2c35ab07d4700f666ca938f4e9ef73"></a><!-- doxytag: member="JavaRenderMemory::fill_solid" ref="4f2c35ab07d4700f666ca938f4e9ef73" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html">FillPolygon</a>* <a class="el" href="class_java_render_memory.html#4f2c35ab07d4700f666ca938f4e9ef73">JavaRenderMemory::fill_solid</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="48e866e57780b989708712e07a089be0"></a><!-- doxytag: member="JavaRenderMemory::fill_alpha" ref="48e866e57780b989708712e07a089be0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html">FillPolygon</a>* <a class="el" href="class_java_render_memory.html#48e866e57780b989708712e07a089be0">JavaRenderMemory::fill_alpha</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="406e2aa6bfd85ef26f41f92839ed77c0"></a><!-- doxytag: member="JavaRenderMemory::fill_gouraud" ref="406e2aa6bfd85ef26f41f92839ed77c0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html">FillPolygon</a>* <a class="el" href="class_java_render_memory.html#406e2aa6bfd85ef26f41f92839ed77c0">JavaRenderMemory::fill_gouraud</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="b855ef8ea51008475288b1c83a871cc3"></a><!-- doxytag: member="JavaRenderMemory::fill_gouraud_alpha" ref="b855ef8ea51008475288b1c83a871cc3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html">FillPolygon</a>* <a class="el" href="class_java_render_memory.html#b855ef8ea51008475288b1c83a871cc3">JavaRenderMemory::fill_gouraud_alpha</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="101c2458619ddae6d73b51f86f28cfd7"></a><!-- doxytag: member="JavaRenderMemory::fill_texture" ref="101c2458619ddae6d73b51f86f28cfd7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html">FillPolygon</a>* <a class="el" href="class_java_render_memory.html#101c2458619ddae6d73b51f86f28cfd7">JavaRenderMemory::fill_texture</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="d7772eeddc557c881fdfb1b0ce39e27f"></a><!-- doxytag: member="JavaRenderMemory::fill_texture_alpha" ref="d7772eeddc557c881fdfb1b0ce39e27f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html">FillPolygon</a>* <a class="el" href="class_java_render_memory.html#d7772eeddc557c881fdfb1b0ce39e27f">JavaRenderMemory::fill_texture_alpha</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="1c2987b411cabea05bcfd1ebe8ffeb6a"></a><!-- doxytag: member="JavaRenderMemory::fill_texture_gouraud" ref="1c2987b411cabea05bcfd1ebe8ffeb6a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html">FillPolygon</a>* <a class="el" href="class_java_render_memory.html#1c2987b411cabea05bcfd1ebe8ffeb6a">JavaRenderMemory::fill_texture_gouraud</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="65946078dd93186964612c5e6b989ee4"></a><!-- doxytag: member="JavaRenderMemory::fill_texture_gouraud_alpha" ref="65946078dd93186964612c5e6b989ee4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html">FillPolygon</a>* <a class="el" href="class_java_render_memory.html#65946078dd93186964612c5e6b989ee4">JavaRenderMemory::fill_texture_gouraud_alpha</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="4253d31fc86f873db35410192b7e076e"></a><!-- doxytag: member="JavaRenderMemory::verts" ref="4253d31fc86f873db35410192b7e076e" args="[100]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_java_render_memory_1_1_v_e_r_t.html">VERT</a> <a class="el" href="class_java_render_memory.html#4253d31fc86f873db35410192b7e076e">JavaRenderMemory::verts</a>[100]<code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<hr>このクラスの説明は次のファイルから生成されました:<ul>
+<li>D:/SRC/java/DF2/<a class="el" href="_java_render_memory_8cpp.html">JavaRenderMemory.cpp</a></ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>DF2に対してThu Mar 13 01:29:05 2008に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.5 </small></address>
+</body>
+</html>

@@ -1,0 +1,31 @@
+/**
+ * @file
+ *
+ * $Id: java.awt.image.h,v 1.1.1.1 2006/08/17 20:26:00 matsushima Exp $
+ *
+ * java.awt.image.h : 
+ *
+ * @author  0.0 2005/03/19 matsushima h2java
+ * @author  0.1 2006/07/21 matsushima cpp2javalib
+ * @version $Revision: 1.1.1.1 $
+ * @since   0.0 2005/03/19 matsushima h2java
+ *
+ * $Log: java.awt.image.h,v $
+ * Revision 1.1.1.1  2006/08/17 20:26:00  matsushima
+ * new
+ *
+ */
+
+#ifndef _JAVA_AWT_IMAGE_H_
+#define _JAVA_AWT_IMAGE_H_
+
+#include "java.awt.image.ColorModel"
+#include "java.awt.image.DirectColorModel"
+#include "java.awt.image.IndexColorModel"
+#include "java.awt.image.ImageConsumer"
+#include "java.awt.image.ImageObserver"
+#include "java.awt.image.ImageProducer"
+#include "java.awt.image.MemoryImageSource"
+#include "java.awt.image.PixelGrabber"
+
+#endif /* #ifndef _JAVA_AWT_IMAGE_H_ */

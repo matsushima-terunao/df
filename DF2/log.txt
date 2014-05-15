@@ -1,0 +1,98 @@
+-> JavaApplet.init()
+> freeMemory/totalMemory : 1135464448/-1
+> System::runFinalization()
+> freeMemory/totalMemory : 1135722496/-1
+> System::gc()
+> freeMemory/totalMemory : 1135689728/-1
+<- JavaApplet.init()
+-> JavaApplet.init()
+> freeMemory/totalMemory : 1134215168/-1
+> System::runFinalization()
+> freeMemory/totalMemory : 1134129152/-1
+> System::gc()
+> freeMemory/totalMemory : 1134194688/-1
+<- JavaApplet.init()
+-> JavaApplet.init()
+> freeMemory/totalMemory : 1117851648/-1
+> System::runFinalization()
+> freeMemory/totalMemory : 1117855744/-1
+> System::gc()
+> freeMemory/totalMemory : 1132421120/-1
+<- JavaApplet.init()
+-> JavaApplet.init()
+> freeMemory/totalMemory : 1010233344/-1
+> System::runFinalization()
+> freeMemory/totalMemory : 1010249728/-1
+> System::gc()
+> freeMemory/totalMemory : 1010225152/-1
+<- JavaApplet.init()
+Java3DWorld.setPerspective() : pers_scale = 1219, pers_distance = 104704
+JavaDF2Fractal.create() : m = 8, max = 65535, n = 1 << m = 256
+> elem_max = 0.000016, elem_min = -0.000018, time = 63ms
+JavaDF2Fractal.create() : m = 8, max = 65535, n = 1 << m = 256
+> elem_max = 0.000022, elem_min = -0.000022, time = 62ms
+JavaDF2Fractal.create() : m = 8, max = 65535, n = 1 << m = 256
+> elem_max = 0.000031, elem_min = -0.000031, time = 62ms
+JavaDF2Fractal.create() : m = 8, max = 65535, n = 1 << m = 256
+> elem_max = 0.000022, elem_min = -0.000024, time = 47ms
+JavaDF2Fractal.create() : m = 9, max = 65535, n = 1 << m = 512
+> elem_max = 0.000013, elem_min = -0.000014, time = 265ms
+JavaDF2Fractal.create() : m = 9, max = 65535, n = 1 << m = 512
+> elem_max = 0.000020, elem_min = -0.000023, time = 234ms
+Java3DModel.zoom_texture() : width = 512, mul_w = 8
+> time = 421 ms
+-> JavaApplet.start()
+> Thread start
+<- JavaApplet.start()
+-> JavaApplet.init()
+> freeMemory/totalMemory : 1089568768/-1
+> System::runFinalization()
+> freeMemory/totalMemory : 1089417216/-1
+> System::gc()
+> freeMemory/totalMemory : 1089417216/-1
+<- JavaApplet.init()
+Java3DWorld.setPerspective() : pers_scale = 1219, pers_distance = 104704
+JavaDF2Fractal.create() : m = 8, max = 65535, n = 1 << m = 256
+> elem_max = 0.000016, elem_min = -0.000018, time = 63ms
+JavaDF2Fractal.create() : m = 8, max = 65535, n = 1 << m = 256
+> elem_max = 0.000022, elem_min = -0.000022, time = 78ms
+JavaDF2Fractal.create() : m = 8, max = 65535, n = 1 << m = 256
+> elem_max = 0.000031, elem_min = -0.000031, time = 62ms
+JavaDF2Fractal.create() : m = 8, max = 65535, n = 1 << m = 256
+> elem_max = 0.000022, elem_min = -0.000024, time = 63ms
+JavaDF2Fractal.create() : m = 9, max = 65535, n = 1 << m = 512
+> elem_max = 0.000013, elem_min = -0.000014, time = 250ms
+JavaDF2Fractal.create() : m = 9, max = 65535, n = 1 << m = 512
+> elem_max = 0.000020, elem_min = -0.000023, time = 234ms
+Java3DModel.zoom_texture() : width = 512, mul_w = 8
+> time = 421 ms
+-> JavaApplet.start()
+> Thread start
+<- JavaApplet.start()
+-> JavaApplet.init()
+> freeMemory/totalMemory : 1082257408/-1
+-> JavaApplet.init()
+> freeMemory/totalMemory : 998424576/-1
+> System::runFinalization()
+> freeMemory/totalMemory : 998150144/-1
+> System::gc()
+> freeMemory/totalMemory : 999383040/-1
+<- JavaApplet.init()
+Java3DWorld.setPerspective() : pers_scale = 1219, pers_distance = 104704
+JavaDF2Fractal.create() : m = 8, max = 65535, n = 1 << m = 256
+> elem_max = 0.000016, elem_min = -0.000018, time = 62ms
+JavaDF2Fractal.create() : m = 8, max = 65535, n = 1 << m = 256
+> elem_max = 0.000022, elem_min = -0.000022, time = 62ms
+JavaDF2Fractal.create() : m = 8, max = 65535, n = 1 << m = 256
+> elem_max = 0.000031, elem_min = -0.000031, time = 63ms
+JavaDF2Fractal.create() : m = 8, max = 65535, n = 1 << m = 256
+> elem_max = 0.000022, elem_min = -0.000024, time = 62ms
+JavaDF2Fractal.create() : m = 9, max = 65535, n = 1 << m = 512
+> elem_max = 0.000013, elem_min = -0.000014, time = 234ms
+JavaDF2Fractal.create() : m = 9, max = 65535, n = 1 << m = 512
+> elem_max = 0.000020, elem_min = -0.000023, time = 234ms
+Java3DModel.zoom_texture() : width = 512, mul_w = 8
+> time = 452 ms
+-> JavaApplet.start()
+> Thread start
+<- JavaApplet.start()

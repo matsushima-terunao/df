@@ -1,0 +1,24 @@
+/**
+ * @file
+ *
+ * $Id: java.util.h,v 1.1.1.1 2006/08/17 20:26:01 matsushima Exp $
+ *
+ * java.util.h : 
+ *
+ * @author  0.0 2005/03/19 matsushima h2java
+ * @author  0.1 2006/07/20 matsushima cpp2javalib
+ * @version $Revision: 1.1.1.1 $
+ * @since   0.0 2005/03/19 matsushima h2java
+ *
+ * $Log: java.util.h,v $
+ * Revision 1.1.1.1  2006/08/17 20:26:01  matsushima
+ * new
+ *
+ */
+
+#ifndef _JAVA_UTIL_H_
+#define _JAVA_UTIL_H_
+
+#include "Random"
+
+#endif /* #ifndef _JAVA_UTIL_H_ */

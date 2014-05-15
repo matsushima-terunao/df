@@ -1,0 +1,104 @@
+/**
+ * @file
+ *
+ * $Id: java.awt.event.MouseEvent,v 1.6 2007/11/30 22:42:27 matsushima Exp $
+ *
+ * java.awt.event.MouseEvent : 
+ *
+ * @author  0.0 2005/03/19 matsushima h2java
+ * @author  0.1 2006/07/21 matsushima cpp2javalib
+ * @version $Revision: 1.6 $
+ * @since   0.0 2005/03/19 matsushima h2java
+ *
+ * $Log: java.awt.event.MouseEvent,v $
+ * Revision 1.6  2007/11/30 22:42:27  matsushima
+ * 再登録
+ *
+ * Revision 1.5  2007/05/10 22:29:47  matsushima
+ * Java/C++ 共通化
+ *
+ * Revision 1.4  2007/05/09 12:45:23  matsushima
+ * no message
+ *
+ * Revision 1.3  2007/05/08 15:24:46  matsushima
+ * スタティックメンバアクセス :: -> .
+ *
+ * Revision 1.2  2007/04/23 17:06:33  matsushima
+ * リプレース
+ *
+ * Revision 1.1.1.1  2006/08/17 20:26:00  matsushima
+ * new
+ *
+ */
+
+#ifndef _JAVA_AWT_EVENT_MOUSEEVENT_
+#define _JAVA_AWT_EVENT_MOUSEEVENT_
+
+#include "../../../cpp2javalib.h"
+
+class Component;
+
+/*------------------------------------------------------------*/
+
+class MouseEvent : public Object
+{
+public:
+    enum
+    {
+        BUTTON1_MASK = 16,
+        BUTTON2_MASK = 8,
+        BUTTON3_MASK = 4,
+
+#undef MOUSE_FIRST
+        MOUSE_FIRST                       = 500,
+        _MOUSE_FIRST                       = 500,
+#undef MOUSE_LAST
+        MOUSE_LAST                        = 507,
+        _MOUSE_LAST                        = 507,
+#undef MOUSE_CLICKED
+        MOUSE_CLICKED                     = MOUSE_FIRST,
+        _MOUSE_CLICKED                     = MOUSE_FIRST,
+#undef MOUSE_PRESSED
+        MOUSE_PRESSED                     = 1 + MOUSE_FIRST,
+        _MOUSE_PRESSED                     = 1 + MOUSE_FIRST,
+#undef MOUSE_RELEASED
+        MOUSE_RELEASED                     = 2 + MOUSE_FIRST,
+        _MOUSE_RELEASED                     = 2 + MOUSE_FIRST,
+#undef MOUSE_MOVED
+        MOUSE_MOVED                     = 3 + MOUSE_FIRST,
+        _MOUSE_MOVED                     = 3 + MOUSE_FIRST,
+#undef MOUSE_ENTERED
+        MOUSE_ENTERED                     = 4 + MOUSE_FIRST,
+        _MOUSE_ENTERED                     = 4 + MOUSE_FIRST,
+#undef MOUSE_EXSITED
+        MOUSE_EXSITED                     = 5 + MOUSE_FIRST,
+        _MOUSE_EXSITED                     = 5 + MOUSE_FIRST,
+#undef MOUSE_DRAGGED
+        MOUSE_DRAGGED                     = 6 + MOUSE_FIRST,
+        _MOUSE_DRAGGED                     = 6 + MOUSE_FIRST,
+#undef MOUSE_WHEEL
+        MOUSE_WHEEL                     = 7 + MOUSE_FIRST,
+        _MOUSE_WHEEL                     = 7 + MOUSE_FIRST,
+    };
+
+public:
+    MouseEvent(Component* source, int id, long when, int modifiers, int x, int y, int clickCount, bool popupTrigger, int button);
+    int getX();
+    int getY();
+    int getModifiers();
+    void consume();
+protected:
+    Component* source;
+    int id;
+    long when;
+    int modifiers;
+    int x;
+    int y;
+    int clickCount;
+    bool popupTrigger;
+    int button;
+};
+
+/*------------------------------------------------------------*/
+
+#endif /* #ifndef _JAVA_AWT_EVENT_MOUSEEVENT_ */

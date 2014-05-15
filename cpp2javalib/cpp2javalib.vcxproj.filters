@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\java">
+      <UniqueIdentifier>{93a64d4c-70db-40dd-9467-9c7707099dd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\java\lang">
+      <UniqueIdentifier>{9ca27e64-712f-42b0-ad42-3d56b1491718}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\java">
+      <UniqueIdentifier>{f624d74c-8b84-4a72-aab2-34505b929639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\java\lang">
+      <UniqueIdentifier>{0ed12d41-6e5c-4e29-9e86-d8c1faab53bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\java\io">
+      <UniqueIdentifier>{7399d33b-abdd-4f1d-a65e-e176dbee949c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\java\io">
+      <UniqueIdentifier>{15cc1811-b504-41fe-8e3b-35d5a6d94645}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\java\net">
+      <UniqueIdentifier>{b2a548e7-d671-4316-84fc-0677ca9a23f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\java\net">
+      <UniqueIdentifier>{227340aa-ad70-4b81-a74f-3776b10492cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\java\util">
+      <UniqueIdentifier>{c065adb9-7ed3-4a80-8add-d4b37fafe9ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\java\util">
+      <UniqueIdentifier>{509f8c42-5d08-42a4-871c-80e7bc6612b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\java\awt">
+      <UniqueIdentifier>{879bb640-12bf-43b8-b94e-caeab4ca506b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\java\awt">
+      <UniqueIdentifier>{b0077dd2-3051-49ee-81e7-1085b26c6669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\java\awt\event">
+      <UniqueIdentifier>{a795883c-2790-4e41-8079-89074be17be3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\java\awt\event">
+      <UniqueIdentifier>{3f6703d7-4a11-492b-aeb6-a9f5feec545f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\java\awt\image">
+      <UniqueIdentifier>{00b8a1f1-15c2-4fbe-994b-1b8b9da77b1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\java\awt\image">
+      <UniqueIdentifier>{df233e96-5399-4d88-926b-f4f5d5f53d2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\java\applet">
+      <UniqueIdentifier>{8d762189-c830-4a44-843f-6cf63695d650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\java\applet">
+      <UniqueIdentifier>{656d8871-a61a-4485-ad67-fcaa5e17efcb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="java\lang\Object">
+      <Filter>ヘッダー ファイル\java\lang</Filter>
+    </None>
+    <None Include="java\lang\String">
+      <Filter>ヘッダー ファイル\java\lang</Filter>
+    </None>
+    <None Include="java\lang\Exception">
+      <Filter>ヘッダー ファイル\java\lang</Filter>
+    </None>
+    <None Include="java\lang\Throwable">
+      <Filter>ヘッダー ファイル\java\lang</Filter>
+    </None>
+    <None Include="java\lang\Integer">
+      <Filter>ヘッダー ファイル\java\lang</Filter>
+    </None>
+    <None Include="java\lang\all">
+      <Filter>ヘッダー ファイル\java\lang</Filter>
+    </None>
+    <None Include="java\lang\InterruptedException">
+      <Filter>ヘッダー ファイル\java\lang</Filter>
+    </None>
+    <None Include="java\lang\Math">
+      <Filter>ヘッダー ファイル\java\lang</Filter>
+    </None>
+    <None Include="java\lang\Runnable">
+      <Filter>ヘッダー ファイル\java\lang</Filter>
+    </None>
+    <None Include="java\lang\System">
+      <Filter>ヘッダー ファイル\java\lang</Filter>
+    </None>
+    <None Include="java\lang\Thread">
+      <Filter>ヘッダー ファイル\java\lang</Filter>
+    </None>
+    <None Include="java\io\all">
+      <Filter>ヘッダー ファイル\java\io</Filter>
+    </None>
+    <None Include="java\io\PrintStream">
+      <Filter>ヘッダー ファイル\java\io</Filter>
+    </None>
+    <None Include="java\net\all">
+      <Filter>ヘッダー ファイル\java\net</Filter>
+    </None>
+    <None Include="java\net\URL">
+      <Filter>ヘッダー ファイル\java\net</Filter>
+    </None>
+    <None Include="java\util\all">
+      <Filter>ヘッダー ファイル\java\util</Filter>
+    </None>
+    <None Include="java\util\Random">
+      <Filter>ヘッダー ファイル\java\util</Filter>
+    </None>
+    <None Include="java\awt\all">
+      <Filter>ヘッダー ファイル\java\awt</Filter>
+    </None>
+    <None Include="java\awt\Color">
+      <Filter>ヘッダー ファイル\java\awt</Filter>
+    </None>
+    <None Include="java\awt\Font">
+      <Filter>ヘッダー ファイル\java\awt</Filter>
+    </None>
+    <None Include="java\awt\FontMetrics">
+      <Filter>ヘッダー ファイル\java\awt</Filter>
+    </None>
+    <None Include="java\awt\Graphics">
+      <Filter>ヘッダー ファイル\java\awt</Filter>
+    </None>
+    <None Include="java\awt\Rectangle">
+      <Filter>ヘッダー ファイル\java\awt</Filter>
+    </None>
+    <None Include="java\awt\event\all">
+      <Filter>ヘッダー ファイル\java\awt\event</Filter>
+    </None>
+    <None Include="java\awt\event\KeyEvent">
+      <Filter>ヘッダー ファイル\java\awt\event</Filter>
+    </None>
+    <None Include="java\awt\event\KeyListener">
+      <Filter>ヘッダー ファイル\java\awt\event</Filter>
+    </None>
+    <None Include="java\awt\event\MouseEvent">
+      <Filter>ヘッダー ファイル\java\awt\event</Filter>
+    </None>
+    <None Include="java\awt\event\MouseListener">
+      <Filter>ヘッダー ファイル\java\awt\event</Filter>
+    </None>
+    <None Include="java\awt\event\MouseMotionListener">
+      <Filter>ヘッダー ファイル\java\awt\event</Filter>
+    </None>
+    <None Include="java\awt\Image_">
+      <Filter>ヘッダー ファイル\java\awt</Filter>
+    </None>
+    <None Include="java\awt\image\all">
+      <Filter>ヘッダー ファイル\java\awt\image</Filter>
+    </None>
+    <None Include="java\awt\image\ColorModel">
+      <Filter>ヘッダー ファイル\java\awt\image</Filter>
+    </None>
+    <None Include="java\awt\image\DirectColorModel">
+      <Filter>ヘッダー ファイル\java\awt\image</Filter>
+    </None>
+    <None Include="java\awt\image\ImageConsumer">
+      <Filter>ヘッダー ファイル\java\awt\image</Filter>
+    </None>
+    <None Include="java\awt\image\ImageObserver">
+      <Filter>ヘッダー ファイル\java\awt\image</Filter>
+    </None>
+    <None Include="java\awt\image\ImageProducer">
+      <Filter>ヘッダー ファイル\java\awt\image</Filter>
+    </None>
+    <None Include="java\awt\image\IndexColorModel">
+      <Filter>ヘッダー ファイル\java\awt\image</Filter>
+    </None>
+    <None Include="java\awt\image\MemoryImageSource">
+      <Filter>ヘッダー ファイル\java\awt\image</Filter>
+    </None>
+    <None Include="java\awt\image\PixelGrabber">
+      <Filter>ヘッダー ファイル\java\awt\image</Filter>
+    </None>
+    <None Include="java\awt\Component">
+      <Filter>ヘッダー ファイル\java\awt</Filter>
+    </None>
+    <None Include="java\applet\all">
+      <Filter>ヘッダー ファイル\java\applet</Filter>
+    </None>
+    <None Include="java\applet\Applet">
+      <Filter>ヘッダー ファイル\java\applet</Filter>
+    </None>
+    <None Include="java\lang\Runtime">
+      <Filter>ヘッダー ファイル\java\lang</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp2javalib.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp2javalibdef.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp2javalibimp.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="AppletViewer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="java\lang\Object.cpp">
+      <Filter>ソース ファイル\java\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="java\lang\String.cpp">
+      <Filter>ソース ファイル\java\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="java\lang\Exception.cpp">
+      <Filter>ソース ファイル\java\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="java\lang\Throwable.cpp">
+      <Filter>ソース ファイル\java\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="java\lang\Integer.cpp">
+      <Filter>ソース ファイル\java\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="java\lang\InterruptedException.cpp">
+      <Filter>ソース ファイル\java\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="java\lang\Math.cpp">
+      <Filter>ソース ファイル\java\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="java\lang\System.cpp">
+      <Filter>ソース ファイル\java\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="java\lang\Thread.cpp">
+      <Filter>ソース ファイル\java\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="java\io\PrintStream.cpp">
+      <Filter>ソース ファイル\java\io</Filter>
+    </ClCompile>
+    <ClCompile Include="java\net\URL.cpp">
+      <Filter>ソース ファイル\java\net</Filter>
+    </ClCompile>
+    <ClCompile Include="java\util\Random.cpp">
+      <Filter>ソース ファイル\java\util</Filter>
+    </ClCompile>
+    <ClCompile Include="java\awt\Font.cpp">
+      <Filter>ソース ファイル\java\awt</Filter>
+    </ClCompile>
+    <ClCompile Include="java\awt\Color.cpp">
+      <Filter>ソース ファイル\java\awt</Filter>
+    </ClCompile>
+    <ClCompile Include="java\awt\FontMetrics.cpp">
+      <Filter>ソース ファイル\java\awt</Filter>
+    </ClCompile>
+    <ClCompile Include="java\awt\Graphics.cpp">
+      <Filter>ソース ファイル\java\awt</Filter>
+    </ClCompile>
+    <ClCompile Include="java\awt\Image.cpp">
+      <Filter>ソース ファイル\java\awt</Filter>
+    </ClCompile>
+    <ClCompile Include="java\awt\Rectangle.cpp">
+      <Filter>ソース ファイル\java\awt</Filter>
+    </ClCompile>
+    <ClCompile Include="java\awt\event\KeyEvent.cpp">
+      <Filter>ソース ファイル\java\awt\event</Filter>
+    </ClCompile>
+    <ClCompile Include="java\awt\event\MouseEvent.cpp">
+      <Filter>ソース ファイル\java\awt\event</Filter>
+    </ClCompile>
+    <ClCompile Include="java\awt\image\ColorModel.cpp">
+      <Filter>ソース ファイル\java\awt\image</Filter>
+    </ClCompile>
+    <ClCompile Include="java\awt\image\DirectColorModel.cpp">
+      <Filter>ソース ファイル\java\awt\image</Filter>
+    </ClCompile>
+    <ClCompile Include="java\awt\image\PixelGrabber.cpp">
+      <Filter>ソース ファイル\java\awt\image</Filter>
+    </ClCompile>
+    <ClCompile Include="java\awt\image\MemoryImageSource.cpp">
+      <Filter>ソース ファイル\java\awt\image</Filter>
+    </ClCompile>
+    <ClCompile Include="java\awt\image\IndexColorModel.cpp">
+      <Filter>ソース ファイル\java\awt\image</Filter>
+    </ClCompile>
+    <ClCompile Include="java\awt\Component.cpp">
+      <Filter>ソース ファイル\java\awt</Filter>
+    </ClCompile>
+    <ClCompile Include="java\applet\Applet.cpp">
+      <Filter>ソース ファイル\java\applet</Filter>
+    </ClCompile>
+    <ClCompile Include="AppletViewer.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="java\lang\Runtime.cpp">
+      <Filter>ソース ファイル\java\lang</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

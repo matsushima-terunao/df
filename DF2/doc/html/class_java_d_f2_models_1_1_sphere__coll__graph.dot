@@ -1,0 +1,45 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize=10,labelfontname="FreeSans",labelfontsize=10];
+  node [fontname="FreeSans",fontsize=10,shape=record];
+  Node1 [label="JavaDF2Models::Sphere",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="FreeSans"];
+  Node2 [label="Java3DModelSphere",height=0.2,width=0.4,color="black",URL="$class_java3_d_model_sphere.html",tooltip="球体モデルの基本クラス。"];
+  Node3 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="FreeSans"];
+  Node3 [label="Java3DModel",height=0.2,width=0.4,color="black",URL="$class_java3_d_model.html",tooltip="3D モデルの基本クラス。"];
+  Node4 -> Node3 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="FreeSans"];
+  Node4 [label="Java3D",height=0.2,width=0.4,color="black",URL="$class_java3_d.html",tooltip="3D オブジェクト(空間 Java3DWorld, モデル Java3DModel)の抽象クラス。..."];
+  Node5 -> Node4 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="FreeSans"];
+  Node5 [label="Java3DStatic",height=0.2,width=0.4,color="black",URL="$class_java3_d_static.html",tooltip="3D オブジェクト(空間 Java3DWorld, モデル Java3DModel)の抽象クラス。..."];
+  Node6 -> Node5 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="FreeSans"];
+  Node6 [label="JavaRenderStatic",height=0.2,width=0.4,color="black",URL="$class_java_render_static.html",tooltip="レンダインターフェース。"];
+  Node7 -> Node4 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="FreeSans"];
+  Node7 [label="JavaRender",height=0.2,width=0.4,color="black",URL="$class_java_render.html",tooltip="レンダインターフェース。"];
+  Node6 -> Node7 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="FreeSans"];
+  Node4 -> Node4 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="parent",fontname="FreeSans"];
+  Node8 -> Node4 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="world",fontname="FreeSans"];
+  Node8 [label="Java3DWorld",height=0.2,width=0.4,color="black",URL="$class_java3_d_world.html",tooltip="3D 空間の基本クラス。"];
+  Node4 -> Node8 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="FreeSans"];
+  Node9 -> Node8 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="translate_time\ntransform_time\nappend_time\ntemp5_time\ntemp4_time\ntemp3_time\ntemp2_time\ntemp1_time",fontname="FreeSans"];
+  Node9 [label="Perf",height=0.2,width=0.4,color="black",URL="$class_perf.html",tooltip="パフォーマンス計測。"];
+  Node10 -> Node9 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="FreeSans"];
+  Node10 [label="PerfStatic",height=0.2,width=0.4,color="black",URL="$class_perf_static.html",tooltip="パフォーマンス計測。"];
+  Node11 -> Node8 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="render",fontname="FreeSans"];
+  Node11 [label="JavaRenderBuffer",height=0.2,width=0.4,color="black",URL="$class_java_render_buffer.html",tooltip="レンダのバッファ。"];
+  Node7 -> Node11 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="FreeSans"];
+  Node9 -> Node11 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="repaint_time\nrender_time\npaint_time\nclear_time",fontname="FreeSans"];
+  Node12 -> Node11 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="render_fontp\nrender_font",fontname="FreeSans"];
+  Node12 [label="JavaRenderTexture",height=0.2,width=0.4,color="black",URL="$class_java_render_texture.html",tooltip="ポリゴン塗りつぶし用テクスチャ、文字列描画用フォント。..."];
+  Node13 -> Node11 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="render_draw\nrender1\nrender2\nrender_paint",fontname="FreeSans"];
+  Node13 [label="JavaRenderAbstract",height=0.2,width=0.4,color="black",URL="$class_java_render_abstract.html",tooltip="レンダの基本クラス。"];
+  Node7 -> Node13 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="FreeSans"];
+  Node14 -> Node3 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="FreeSans"];
+  Node14 [label="Java3DModelStatic",height=0.2,width=0.4,color="black",URL="$class_java3_d_model_static.html",tooltip="3D モデルの基本クラス。"];
+  Node5 -> Node14 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="FreeSans"];
+  Node12 -> Node3 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="texture",fontname="FreeSans"];
+  Node15 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="FreeSans"];
+  Node15 [label="Java3DModelSphereStatic",height=0.2,width=0.4,color="black",URL="$class_java3_d_model_sphere_static.html",tooltip="球体モデルの基本クラス。"];
+  Node14 -> Node15 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="FreeSans"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="models",fontname="FreeSans"];
+}

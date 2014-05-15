@@ -1,0 +1,53 @@
+/**
+ * @file
+ *
+ * $Id: java.awt.Graphics,v 1.1.1.1 2006/08/17 20:26:00 matsushima Exp $
+ *
+ * java.awt.Graphics : 
+ *
+ * @author  0.0 2005/03/19 matsushima h2java
+ * @author  0.1 2006/07/20 matsushima cpp2javalib
+ * @version $Revision: 1.1.1.1 $
+ * @since   0.0 2005/03/19 matsushima h2java
+ *
+ * $Log: java.awt.Graphics,v $
+ * Revision 1.1.1.1  2006/08/17 20:26:00  matsushima
+ * new
+ *
+ */
+
+#ifndef _JAVA_AWT_GRAPHICS_
+#define _JAVA_AWT_GRAPHICS_
+
+#include "../../cpp2javalib.h"
+
+class Color;
+class Font;
+class FontMetrics;
+class Image;
+class ImageObserver;
+
+/*------------------------------------------------------------*/
+
+class Graphics : public Object
+{
+protected:
+    Graphics() {}
+public:
+    virtual ~Graphics() {}
+    virtual void setColor(const Color* c) = 0;
+    virtual Font*& getFont() = 0;
+    virtual void setFont(const Font* font) = 0;
+    virtual FontMetrics* getFontMetrics() = 0;
+    virtual void drawLine(int x1, int y1, int x2, int y2) = 0;
+    virtual void fillRect(int x, int y, int width, int height) = 0;
+    virtual void drawPolygon(int* xPoints, int* yPoints, int nPoints) = 0;
+    virtual void fillPolygon(int* xPoints, int* yPoints, int nPoints) = 0;
+    virtual void fillArc(int x, int y, int width, int height, int startAngle, int endAngle) = 0;
+    virtual void drawImage(Image* img, int x, int y, ImageObserver* observer) = 0;
+    virtual void drawString(const char* str, int x, int y) = 0;
+};
+
+/*------------------------------------------------------------*/
+
+#endif /* #ifndef _JAVA_AWT_GRAPHICS_ */

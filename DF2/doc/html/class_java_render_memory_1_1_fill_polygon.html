@@ -1,0 +1,1099 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>DF2: クラス JavaRenderMemory::FillPolygon</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 作成： Doxygen 1.5.5 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="class_java_render_memory.html">JavaRenderMemory</a>::<a class="el" href="class_java_render_memory_1_1_fill_polygon.html">FillPolygon</a>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス JavaRenderMemory::FillPolygon</h1><!-- doxytag: class="JavaRenderMemory::FillPolygon" -->ポリゴン塗りつぶしの基本クラス。  
+<a href="#_details">[詳細]</a>
+<p>
+<div class="dynheader">
+JavaRenderMemory::FillPolygonに対する継承グラフ</div>
+<div class="dynsection">
+<p><center><img src="class_java_render_memory_1_1_fill_polygon__inherit__graph.png" border="0" usemap="#_java_render_memory_1_1_fill_polygon__inherit__map" alt="Inheritance graph"></center>
+<center><font size="2">[<a href="graph_legend.html">凡例</a>]</font></center></div>
+
+<p>
+<a href="class_java_render_memory_1_1_fill_polygon-members.html">すべてのメンバ一覧</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#bf0fae6b7d8f628ea5eb7fd4020cc424">FillPolygon</a> (<a class="el" href="class_java_render_memory.html">JavaRenderMemory</a> *render)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#9feb6cad1bf6a684d23b295b94dd1ada">fillPolygon</a> (int cnt, int x_min, int x_max, int y_min, int y_max, int y_min_p, <a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *<a class="el" href="class_java_render_memory_1_1_fill_polygon.html#db87c70802be2e0784a13d36bff1b144">texture</a>)</td></tr>
+
+<tr><td colspan="2"><br><h2>Public 変数</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#107b28c95fd0ca9876e33d53662ef185">width</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#3184b898d0d6b2393f33a0efa2404567">height</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int *&amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#9d2562739544a1268a40a0d21dfd46d6">pixOff</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int(*&amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#19a4765e66f59561f1a9c4718b878511">b_tbl</a> )[256]</td></tr>
+
+<tr><td colspan="2"><br><h2>Protected メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#93ab74e6c9e5fbf7fbe6c42aabfa0cf5">new_point_left</a> (int i1, int dy)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#4340f5a5c08d92dd93d251a120206ac1">new_point_right</a> (int i2, int dy)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#3d3afa1f8457ecaa72a3267a8a5c0972">draw_scan_line</a> ()=0</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#67ee72fc8c619328720fb6a69022b4a1">_y</a> (int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#fddb1829c5a47c16e2ca60497d94e286">y</a>)</td></tr>
+
+<tr><td colspan="2"><br><h2>Protected 変数</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#9f8bb146df9474e45febd76ec4391beb">color</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#db87c70802be2e0784a13d36bff1b144">texture</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#4a84fa3f949f8346c3e8e64a1bf340db">tw</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#a07458b94276d947fcc4554bcf8b3202">th</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#bbcc1584d351fffb18223ca54b0a5f25">x1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#337d73da08144a9d90db52a34e227e6f">x2</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#d5e6c3c6b712682da936cfbbac58ae0d">dx1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#fe2d46b499be1b9cae177609ade182bd">dx2</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#ebcd8a94b4d1f3ef0c137f0754924876">r1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#0abcea65bc72ea3102b1d566ad172552">r2</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#0319cfd6d5aa53e991c794096cc484d0">dr1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#7ea671afdb1e4416efea4bea5f9fc9a8">dr2</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#06d2770473e8969b41c11707db23505d">g1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#348a91c01e72cd142e9d167cc21b645d">g2</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#cc34ec2ed0596bcd078d6be9f4971d16">dg1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#805af38284503de5e13f003a01dc9dcd">dg2</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#65a07cdf70ef359d423e2118daf5c445">b1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#0c5752ffb7d1780d6a57c732f467f75d">b2</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#b8e32ff55273f845bc8b0cb31f464e73">db1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#792ee7403ce484616081babd203ab448">db2</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#6b408e99fa54d371343c7c617e72804c">bn1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#020373755cee619e71bdff6c5bcabe4d">bn2</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#633a4a035e7d605bacc6ba175318c80e">dbn1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#f71cd3914e9f273641132720cf85db77">dbn2</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#4ca883e5d6ddb653c37e271b9097cde1">a1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#8cfcbde515df46194887b3bef21f474f">a2</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#b3827678ef87018aeeac96cea8035ca9">da1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#12639031e45b9a2b0993e7213481ba54">da2</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#fcbe151188849675c197a9dfe1bd8220">an1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#0604b419e8eb422344c3667c0744fd52">an2</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#fbcc60227f0bf35ba3fe158cc9680420">dan1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#60b041eb336beb5bd4c5a9f6ad009c98">dan2</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#41be22e50d9ff6c380d6a94911dee301">tx1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#fb5c0370cbb31e7e23865fede2c2b342">tx2</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#4008316146cf8879121077f0d312c474">dtx1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#027578131e2cd6b95ae784df3c550f99">dtx2</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#48f82f0601f345db6a1ada139c1ed5f4">ty1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#1c6edf9b16ed538035768a5cc93c755f">ty2</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#e151cee30b0a4b80763163525e6eb218">dty1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#9c6fa96c93debb30e75b1f301b1d7624">dty2</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#fddb1829c5a47c16e2ca60497d94e286">y</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#6c6c2e40346c17e310a6b449289e12f7">px1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#ea00618f88bae850a5f4ec91f8e88e56">px2</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#ffe8cb3f1a7de4a4ce7ac49c7dae165c">pdx</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#8bf8aa42bedfa4b2fc2a3902ab19a055">p1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_memory_1_1_fill_polygon.html#eff24ac88e278019e8dec4984ff56acd">p2</a></td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>説明</h2>
+ポリゴン塗りつぶしの基本クラス。 <hr><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" name="bf0fae6b7d8f628ea5eb7fd4020cc424"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::FillPolygon" ref="bf0fae6b7d8f628ea5eb7fd4020cc424" args="(JavaRenderMemory *render)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">JavaRenderMemory::FillPolygon::FillPolygon           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_java_render_memory.html">JavaRenderMemory</a> *&nbsp;</td>
+          <td class="paramname"> <em>render</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<hr><h2>関数</h2>
+<a class="anchor" name="93ab74e6c9e5fbf7fbe6c42aabfa0cf5"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::new_point_left" ref="93ab74e6c9e5fbf7fbe6c42aabfa0cf5" args="(int i1, int dy)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderMemory::FillPolygon::new_point_left           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>i1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>dy</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [inline, protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p><a class="el" href="class_java_render_memory_1_1_fill_polygon_alpha.html#222773fcebf8a663728b28e683f905c6">JavaRenderMemory::FillPolygonAlpha</a>, <a class="el" href="class_java_render_memory_1_1_fill_polygon_gouraud.html#a6549eb173b58e9bd6957f476b418d1b">JavaRenderMemory::FillPolygonGouraud</a>, <a class="el" href="class_java_render_memory_1_1_fill_polygon_gouraud_alpha.html#d1b4d089d3ec1e951e07ee5e78e66014">JavaRenderMemory::FillPolygonGouraudAlpha</a>, <a class="el" href="class_java_render_memory_1_1_fill_polygon_texture.html#1f6f31f1244dd1d39549a701239754a0">JavaRenderMemory::FillPolygonTexture</a>, <a class="el" href="class_java_render_memory_1_1_fill_polygon_texture_alpha.html#cbc5bcbb3bec6e3084eef7c360adfabd">JavaRenderMemory::FillPolygonTextureAlpha</a>, <a class="el" href="class_java_render_memory_1_1_fill_polygon_texture_gouraud.html#9ac36998a1bf695c8bc61e131fbbf734">JavaRenderMemory::FillPolygonTextureGouraud</a>, と <a class="el" href="class_java_render_memory_1_1_fill_polygon_texture_gouraud_alpha.html#38b77978f6488b2d22da52f287b04166">JavaRenderMemory::FillPolygonTextureGouraudAlpha</a>で再定義されています。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="4340f5a5c08d92dd93d251a120206ac1"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::new_point_right" ref="4340f5a5c08d92dd93d251a120206ac1" args="(int i2, int dy)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderMemory::FillPolygon::new_point_right           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>i2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>dy</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [inline, protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p><a class="el" href="class_java_render_memory_1_1_fill_polygon_gouraud.html#a35fef7f0dc75c4513b3969f9482be18">JavaRenderMemory::FillPolygonGouraud</a>, <a class="el" href="class_java_render_memory_1_1_fill_polygon_gouraud_alpha.html#f9323457f295e2152657cc395507d033">JavaRenderMemory::FillPolygonGouraudAlpha</a>, <a class="el" href="class_java_render_memory_1_1_fill_polygon_texture.html#ea9ac8b782944f1b29fd7ac19f24e8eb">JavaRenderMemory::FillPolygonTexture</a>, <a class="el" href="class_java_render_memory_1_1_fill_polygon_texture_alpha.html#eeb6305c2916a04755fe802fa4767093">JavaRenderMemory::FillPolygonTextureAlpha</a>, <a class="el" href="class_java_render_memory_1_1_fill_polygon_texture_gouraud.html#865e7bb319e0c2e7f6dfe116cd78a2cc">JavaRenderMemory::FillPolygonTextureGouraud</a>, と <a class="el" href="class_java_render_memory_1_1_fill_polygon_texture_gouraud_alpha.html#eb7b9613ebf9f0de3b134249024d7d95">JavaRenderMemory::FillPolygonTextureGouraudAlpha</a>で再定義されています。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="3d3afa1f8457ecaa72a3267a8a5c0972"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::draw_scan_line" ref="3d3afa1f8457ecaa72a3267a8a5c0972" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderMemory::FillPolygon::draw_scan_line           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected, pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p><a class="el" href="class_java_render_memory_1_1_fill_polygon_solid.html#7054658cfdad7a2d36e5a8ae954937e9">JavaRenderMemory::FillPolygonSolid</a>, <a class="el" href="class_java_render_memory_1_1_fill_polygon_alpha.html#de3c8970392d9d93b5195779f31e7004">JavaRenderMemory::FillPolygonAlpha</a>, <a class="el" href="class_java_render_memory_1_1_fill_polygon_gouraud.html#0eb3ceddb9895570390c658e90149f1e">JavaRenderMemory::FillPolygonGouraud</a>, <a class="el" href="class_java_render_memory_1_1_fill_polygon_gouraud_alpha.html#ad779526173c1a9bbc09c027fb44d84e">JavaRenderMemory::FillPolygonGouraudAlpha</a>, <a class="el" href="class_java_render_memory_1_1_fill_polygon_texture.html#f1a2cb0aef86d158bf98060dbb45d227">JavaRenderMemory::FillPolygonTexture</a>, <a class="el" href="class_java_render_memory_1_1_fill_polygon_texture_alpha.html#685787f81b45d1747d6d7575ecec8257">JavaRenderMemory::FillPolygonTextureAlpha</a>, <a class="el" href="class_java_render_memory_1_1_fill_polygon_texture_gouraud.html#0f59f35827c79404cd5d4b892225e7aa">JavaRenderMemory::FillPolygonTextureGouraud</a>, と <a class="el" href="class_java_render_memory_1_1_fill_polygon_texture_gouraud_alpha.html#073f31364794a180626db9e0fd84cd48">JavaRenderMemory::FillPolygonTextureGouraudAlpha</a>で実装されています。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="67ee72fc8c619328720fb6a69022b4a1"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::_y" ref="67ee72fc8c619328720fb6a69022b4a1" args="(int y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int JavaRenderMemory::FillPolygon::_y           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline, protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="9feb6cad1bf6a684d23b295b94dd1ada"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::fillPolygon" ref="9feb6cad1bf6a684d23b295b94dd1ada" args="(int cnt, int x_min, int x_max, int y_min, int y_max, int y_min_p, JavaRenderTexture *texture)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderMemory::FillPolygon::fillPolygon           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>cnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x_min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x_max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y_min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y_max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y_min_p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *&nbsp;</td>
+          <td class="paramname"> <em>texture</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<hr><h2>変数</h2>
+<a class="anchor" name="9f8bb146df9474e45febd76ec4391beb"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::color" ref="9f8bb146df9474e45febd76ec4391beb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#9f8bb146df9474e45febd76ec4391beb">JavaRenderMemory::FillPolygon::color</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="db87c70802be2e0784a13d36bff1b144"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::texture" ref="db87c70802be2e0784a13d36bff1b144" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int* <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#db87c70802be2e0784a13d36bff1b144">JavaRenderMemory::FillPolygon::texture</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="4a84fa3f949f8346c3e8e64a1bf340db"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::tw" ref="4a84fa3f949f8346c3e8e64a1bf340db" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#4a84fa3f949f8346c3e8e64a1bf340db">JavaRenderMemory::FillPolygon::tw</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="a07458b94276d947fcc4554bcf8b3202"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::th" ref="a07458b94276d947fcc4554bcf8b3202" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#a07458b94276d947fcc4554bcf8b3202">JavaRenderMemory::FillPolygon::th</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="bbcc1584d351fffb18223ca54b0a5f25"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::x1" ref="bbcc1584d351fffb18223ca54b0a5f25" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#bbcc1584d351fffb18223ca54b0a5f25">JavaRenderMemory::FillPolygon::x1</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="337d73da08144a9d90db52a34e227e6f"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::x2" ref="337d73da08144a9d90db52a34e227e6f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#337d73da08144a9d90db52a34e227e6f">JavaRenderMemory::FillPolygon::x2</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="d5e6c3c6b712682da936cfbbac58ae0d"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::dx1" ref="d5e6c3c6b712682da936cfbbac58ae0d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#d5e6c3c6b712682da936cfbbac58ae0d">JavaRenderMemory::FillPolygon::dx1</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="fe2d46b499be1b9cae177609ade182bd"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::dx2" ref="fe2d46b499be1b9cae177609ade182bd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#fe2d46b499be1b9cae177609ade182bd">JavaRenderMemory::FillPolygon::dx2</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="ebcd8a94b4d1f3ef0c137f0754924876"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::r1" ref="ebcd8a94b4d1f3ef0c137f0754924876" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#ebcd8a94b4d1f3ef0c137f0754924876">JavaRenderMemory::FillPolygon::r1</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="0abcea65bc72ea3102b1d566ad172552"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::r2" ref="0abcea65bc72ea3102b1d566ad172552" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#0abcea65bc72ea3102b1d566ad172552">JavaRenderMemory::FillPolygon::r2</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="0319cfd6d5aa53e991c794096cc484d0"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::dr1" ref="0319cfd6d5aa53e991c794096cc484d0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#0319cfd6d5aa53e991c794096cc484d0">JavaRenderMemory::FillPolygon::dr1</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="7ea671afdb1e4416efea4bea5f9fc9a8"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::dr2" ref="7ea671afdb1e4416efea4bea5f9fc9a8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#7ea671afdb1e4416efea4bea5f9fc9a8">JavaRenderMemory::FillPolygon::dr2</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="06d2770473e8969b41c11707db23505d"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::g1" ref="06d2770473e8969b41c11707db23505d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#06d2770473e8969b41c11707db23505d">JavaRenderMemory::FillPolygon::g1</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="348a91c01e72cd142e9d167cc21b645d"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::g2" ref="348a91c01e72cd142e9d167cc21b645d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#348a91c01e72cd142e9d167cc21b645d">JavaRenderMemory::FillPolygon::g2</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="cc34ec2ed0596bcd078d6be9f4971d16"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::dg1" ref="cc34ec2ed0596bcd078d6be9f4971d16" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#cc34ec2ed0596bcd078d6be9f4971d16">JavaRenderMemory::FillPolygon::dg1</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="805af38284503de5e13f003a01dc9dcd"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::dg2" ref="805af38284503de5e13f003a01dc9dcd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#805af38284503de5e13f003a01dc9dcd">JavaRenderMemory::FillPolygon::dg2</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="65a07cdf70ef359d423e2118daf5c445"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::b1" ref="65a07cdf70ef359d423e2118daf5c445" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#65a07cdf70ef359d423e2118daf5c445">JavaRenderMemory::FillPolygon::b1</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="0c5752ffb7d1780d6a57c732f467f75d"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::b2" ref="0c5752ffb7d1780d6a57c732f467f75d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#0c5752ffb7d1780d6a57c732f467f75d">JavaRenderMemory::FillPolygon::b2</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="b8e32ff55273f845bc8b0cb31f464e73"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::db1" ref="b8e32ff55273f845bc8b0cb31f464e73" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#b8e32ff55273f845bc8b0cb31f464e73">JavaRenderMemory::FillPolygon::db1</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="792ee7403ce484616081babd203ab448"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::db2" ref="792ee7403ce484616081babd203ab448" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#792ee7403ce484616081babd203ab448">JavaRenderMemory::FillPolygon::db2</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="6b408e99fa54d371343c7c617e72804c"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::bn1" ref="6b408e99fa54d371343c7c617e72804c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#6b408e99fa54d371343c7c617e72804c">JavaRenderMemory::FillPolygon::bn1</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="020373755cee619e71bdff6c5bcabe4d"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::bn2" ref="020373755cee619e71bdff6c5bcabe4d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#020373755cee619e71bdff6c5bcabe4d">JavaRenderMemory::FillPolygon::bn2</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="633a4a035e7d605bacc6ba175318c80e"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::dbn1" ref="633a4a035e7d605bacc6ba175318c80e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#633a4a035e7d605bacc6ba175318c80e">JavaRenderMemory::FillPolygon::dbn1</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="f71cd3914e9f273641132720cf85db77"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::dbn2" ref="f71cd3914e9f273641132720cf85db77" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#f71cd3914e9f273641132720cf85db77">JavaRenderMemory::FillPolygon::dbn2</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="4ca883e5d6ddb653c37e271b9097cde1"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::a1" ref="4ca883e5d6ddb653c37e271b9097cde1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#4ca883e5d6ddb653c37e271b9097cde1">JavaRenderMemory::FillPolygon::a1</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="8cfcbde515df46194887b3bef21f474f"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::a2" ref="8cfcbde515df46194887b3bef21f474f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#8cfcbde515df46194887b3bef21f474f">JavaRenderMemory::FillPolygon::a2</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="b3827678ef87018aeeac96cea8035ca9"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::da1" ref="b3827678ef87018aeeac96cea8035ca9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#b3827678ef87018aeeac96cea8035ca9">JavaRenderMemory::FillPolygon::da1</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="12639031e45b9a2b0993e7213481ba54"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::da2" ref="12639031e45b9a2b0993e7213481ba54" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#12639031e45b9a2b0993e7213481ba54">JavaRenderMemory::FillPolygon::da2</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="fcbe151188849675c197a9dfe1bd8220"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::an1" ref="fcbe151188849675c197a9dfe1bd8220" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#fcbe151188849675c197a9dfe1bd8220">JavaRenderMemory::FillPolygon::an1</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="0604b419e8eb422344c3667c0744fd52"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::an2" ref="0604b419e8eb422344c3667c0744fd52" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#0604b419e8eb422344c3667c0744fd52">JavaRenderMemory::FillPolygon::an2</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="fbcc60227f0bf35ba3fe158cc9680420"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::dan1" ref="fbcc60227f0bf35ba3fe158cc9680420" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#fbcc60227f0bf35ba3fe158cc9680420">JavaRenderMemory::FillPolygon::dan1</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="60b041eb336beb5bd4c5a9f6ad009c98"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::dan2" ref="60b041eb336beb5bd4c5a9f6ad009c98" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#60b041eb336beb5bd4c5a9f6ad009c98">JavaRenderMemory::FillPolygon::dan2</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="41be22e50d9ff6c380d6a94911dee301"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::tx1" ref="41be22e50d9ff6c380d6a94911dee301" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#41be22e50d9ff6c380d6a94911dee301">JavaRenderMemory::FillPolygon::tx1</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="fb5c0370cbb31e7e23865fede2c2b342"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::tx2" ref="fb5c0370cbb31e7e23865fede2c2b342" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#fb5c0370cbb31e7e23865fede2c2b342">JavaRenderMemory::FillPolygon::tx2</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="4008316146cf8879121077f0d312c474"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::dtx1" ref="4008316146cf8879121077f0d312c474" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#4008316146cf8879121077f0d312c474">JavaRenderMemory::FillPolygon::dtx1</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="027578131e2cd6b95ae784df3c550f99"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::dtx2" ref="027578131e2cd6b95ae784df3c550f99" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#027578131e2cd6b95ae784df3c550f99">JavaRenderMemory::FillPolygon::dtx2</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="48f82f0601f345db6a1ada139c1ed5f4"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::ty1" ref="48f82f0601f345db6a1ada139c1ed5f4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#48f82f0601f345db6a1ada139c1ed5f4">JavaRenderMemory::FillPolygon::ty1</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="1c6edf9b16ed538035768a5cc93c755f"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::ty2" ref="1c6edf9b16ed538035768a5cc93c755f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#1c6edf9b16ed538035768a5cc93c755f">JavaRenderMemory::FillPolygon::ty2</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="e151cee30b0a4b80763163525e6eb218"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::dty1" ref="e151cee30b0a4b80763163525e6eb218" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#e151cee30b0a4b80763163525e6eb218">JavaRenderMemory::FillPolygon::dty1</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="9c6fa96c93debb30e75b1f301b1d7624"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::dty2" ref="9c6fa96c93debb30e75b1f301b1d7624" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#9c6fa96c93debb30e75b1f301b1d7624">JavaRenderMemory::FillPolygon::dty2</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="fddb1829c5a47c16e2ca60497d94e286"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::y" ref="fddb1829c5a47c16e2ca60497d94e286" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#fddb1829c5a47c16e2ca60497d94e286">JavaRenderMemory::FillPolygon::y</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="6c6c2e40346c17e310a6b449289e12f7"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::px1" ref="6c6c2e40346c17e310a6b449289e12f7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#6c6c2e40346c17e310a6b449289e12f7">JavaRenderMemory::FillPolygon::px1</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="ea00618f88bae850a5f4ec91f8e88e56"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::px2" ref="ea00618f88bae850a5f4ec91f8e88e56" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#ea00618f88bae850a5f4ec91f8e88e56">JavaRenderMemory::FillPolygon::px2</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="ffe8cb3f1a7de4a4ce7ac49c7dae165c"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::pdx" ref="ffe8cb3f1a7de4a4ce7ac49c7dae165c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#ffe8cb3f1a7de4a4ce7ac49c7dae165c">JavaRenderMemory::FillPolygon::pdx</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="8bf8aa42bedfa4b2fc2a3902ab19a055"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::p1" ref="8bf8aa42bedfa4b2fc2a3902ab19a055" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#8bf8aa42bedfa4b2fc2a3902ab19a055">JavaRenderMemory::FillPolygon::p1</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="eff24ac88e278019e8dec4984ff56acd"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::p2" ref="eff24ac88e278019e8dec4984ff56acd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#eff24ac88e278019e8dec4984ff56acd">JavaRenderMemory::FillPolygon::p2</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="107b28c95fd0ca9876e33d53662ef185"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::width" ref="107b28c95fd0ca9876e33d53662ef185" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int&amp; <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#107b28c95fd0ca9876e33d53662ef185">JavaRenderMemory::FillPolygon::width</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="3184b898d0d6b2393f33a0efa2404567"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::height" ref="3184b898d0d6b2393f33a0efa2404567" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int &amp; <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#3184b898d0d6b2393f33a0efa2404567">JavaRenderMemory::FillPolygon::height</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="9d2562739544a1268a40a0d21dfd46d6"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::pixOff" ref="9d2562739544a1268a40a0d21dfd46d6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int *&amp; <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#9d2562739544a1268a40a0d21dfd46d6">JavaRenderMemory::FillPolygon::pixOff</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="19a4765e66f59561f1a9c4718b878511"></a><!-- doxytag: member="JavaRenderMemory::FillPolygon::b_tbl" ref="19a4765e66f59561f1a9c4718b878511" args=")[256]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(*&amp; <a class="el" href="class_java_render_memory_1_1_fill_polygon.html#19a4765e66f59561f1a9c4718b878511">JavaRenderMemory::FillPolygon::b_tbl</a>)[256]          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<hr>このクラスの説明は次のファイルから生成されました:<ul>
+<li>D:/SRC/java/DF2/<a class="el" href="_java_render_memory_8cpp.html">JavaRenderMemory.cpp</a></ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>DF2に対してThu Mar 13 01:29:05 2008に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.5 </small></address>
+</body>
+</html>

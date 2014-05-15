@@ -1,0 +1,559 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>DF2: クラス Java3DModelStatic</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 作成： Doxygen 1.5.5 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス Java3DModelStatic</h1><!-- doxytag: class="Java3DModelStatic" --><!-- doxytag: inherits="Java3DStatic" -->3D モデルの基本クラス。  
+<a href="#_details">[詳細]</a>
+<p>
+<div class="dynheader">
+Java3DModelStaticに対する継承グラフ</div>
+<div class="dynsection">
+<p><center><img src="class_java3_d_model_static__inherit__graph.png" border="0" usemap="#_java3_d_model_static__inherit__map" alt="Inheritance graph"></center>
+<center><font size="2">[<a href="graph_legend.html">凡例</a>]</font></center></div>
+<div class="dynheader">
+Java3DModelStaticのコラボレーション図</div>
+<div class="dynsection">
+<p><center><img src="class_java3_d_model_static__coll__graph.png" border="0" usemap="#_java3_d_model_static__coll__map" alt="Collaboration graph"></center>
+<center><font size="2">[<a href="graph_legend.html">凡例</a>]</font></center></div>
+
+<p>
+<a href="class_java3_d_model_static-members.html">すべてのメンバ一覧</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Public 型</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom">{ <br>
+&nbsp;&nbsp;<a class="el" href="class_java3_d_model_static.html#bf30c682bd617ed8ac1c9c8087232350d99f4d14c85b21ff0ba0d4f4361408cc">KIND_UNUSED</a> =  0, 
+<a class="el" href="class_java3_d_model_static.html#bf30c682bd617ed8ac1c9c8087232350f1dee95684fc4681e37d270ca8627785">KIND_FRAGMENT</a> =  -2, 
+<a class="el" href="class_java3_d_model_static.html#bf30c682bd617ed8ac1c9c8087232350b44e51e181ef20ddac5b0bebc049f258">KIND_FRAGMENT2</a> =  -3, 
+<a class="el" href="class_java3_d_model_static.html#bf30c682bd617ed8ac1c9c8087232350b8e5b8fec06881328e27d8e6f44aba7a">KIND_USED</a> =  1, 
+<br>
+&nbsp;&nbsp;<a class="el" href="class_java3_d_model_static.html#bf30c682bd617ed8ac1c9c8087232350b41bde8e2253672989f436c5a3988e2a">KIND_ENEMY1</a> =  2
+<br>
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">予約済みのモデルの種類。  <a href="class_java3_d_model_static.html#bf30c682bd617ed8ac1c9c8087232350">[詳細]</a><br></td></tr>
+<tr><td colspan="2"><br><h2>Static Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static int *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java3_d_model_static.html#5321cc5cb8e3391817f350195d1bff0e">create_color_table</a> (int cnt, const int *t)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">グラデーションカラーテーブルの作成。  <a href="#5321cc5cb8e3391817f350195d1bff0e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static int *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java3_d_model_static.html#e29f62be2ccac8f1a2e5264fa9dde406">index_to_color</a> (int *dst, const int *verts, int cnt, int *vert_colors, int mul, int div)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">色インデックスの配列を ARGB に変換する。  <a href="#e29f62be2ccac8f1a2e5264fa9dde406"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static int *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java3_d_model_static.html#ed9a1b355acca5c98a540cb7c650a31c">zoom_texture</a> (const int *src, int width, int height, int mul_w, int mul_h)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">テクスチャを拡大する。 バイリニアフィルタ(線形補完)。  <a href="#ed9a1b355acca5c98a540cb7c650a31c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java3_d_model_static.html#677269a3bf8cfc59be3e0fab30f2fcc3">get_brightness_color</a> (int color, int brightness)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">指定された明るさで色を正規化。  <a href="#677269a3bf8cfc59be3e0fab30f2fcc3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java3_d_model_static.html#bcb8e04086f60e07595aa1268229664a">get_vert_cnt</a> (int *polys, int s)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ポリゴン配列の現在のポリゴンの頂点数を数える。  <a href="#bcb8e04086f60e07595aa1268229664a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java3_d_model_static.html#1289022bb3e0d8e8a7f8354ba2f70135">set_vert</a> (int *verts, int index, int color, int x, int y, int z)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">頂点座標配列のメンバを設定。  <a href="#1289022bb3e0d8e8a7f8354ba2f70135"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java3_d_model_static.html#408f5dc2efbcc275d02f80c24764b9b3">set_vert_color</a> (int *verts, int index, int value)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">頂点座標配列の色を設定。  <a href="#408f5dc2efbcc275d02f80c24764b9b3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java3_d_model_static.html#6285c7ba00bc534a6f1c4d553e80933e">set_vert_xyz</a> (int *verts, int index, int x, int y, int z)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">頂点座標配列の x, y, z 座標を設定。  <a href="#6285c7ba00bc534a6f1c4d553e80933e"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>説明</h2>
+3D モデルの基本クラス。 
+<p>
+<dl class="since" compact><dt><b>から:</b></dt><dd>1.0 matsushima </dd></dl>
+<dl class="author" compact><dt><b>作者:</b></dt><dd>1.0 matsushima </dd></dl>
+<dl class="version" compact><dt><b>バージョン:</b></dt><dd></dd></dl>
+<dl class="rcs" compact><dt><b>Id</b></dt><dd><a class="el" href="_java3_d_model_8cpp.html">Java3DModel.cpp</a>,v 1.32 2008/03/06 16:42:45 matsushima Exp </dd></dl>
+<p>
+<dl class="rcs" compact><dt><b>Log</b></dt><dd><a class="el" href="_java3_d_model_8cpp.html">Java3DModel.cpp</a>,v </dd></dl>
+Revision 1.32 2008/03/06 16:42:45 matsushima JavaDoc/Doxygen 対応<p>
+Revision 1.31 2008/03/06 15:39:49 matsushima h/cpp 共通化<p>
+Revision 1.30 2008/03/04 17:21:01 matsushima Java/C++ 共通化<p>
+Revision 1.29 2008/03/03 02:10:50 matsushima render ふりわけを <a class="el" href="class_java_render_buffer.html" title="レンダのバッファ。">JavaRenderBuffer</a> -&gt; JavaRenderXxx テクスチャを int[] -&gt; <a class="el" href="class_java_render_texture.html" title="ポリゴン塗りつぶし用テクスチャ、文字列描画用フォント。...">JavaRenderTexture</a><p>
+Revision 1.28 2007/12/01 22:14:14 matsushima 再登録<p>
+Revision 1.27 2007/05/24 01:01:35 matsushima no message<p>
+Revision 1.26 2007/05/23 15:41:43 matsushima <a class="el" href="class_java_render_buffer.html" title="レンダのバッファ。">JavaRenderBuffer</a>, JavaRenderInterface を <a class="el" href="class_java3_d.html" title="3D オブジェクト(空間 Java3DWorld, モデル Java3DModel)の抽象クラス。...">Java3D</a> から分離<p>
+Revision 1.19 2007/05/16 20:57:58 matsushima テクスチャマッピング<p>
+Revision 1.15 2007/05/14 15:58:36 matsushima Java/C++ 共通化<p>
+Revision 1.14 2007/05/14 13:38:18 matsushima Java/C++ 共通化<p>
+Revision 1.12 2007/05/10 22:29:39 matsushima Java/C++ 共通化<p>
+Revision 1.9 2007/05/08 22:13:37 matsushima Java/C++ 共通化<p>
+Revision 1.8 2007/05/08 15:25:01 matsushima スタティックメンバアクセス :: -&gt; .<p>
+Revision 1.7 2007/05/07 21:40:04 matsushima staticメンバアクセス :: -&gt; .<p>
+Revision 1.6 2007/05/06 18:00:09 matsushima render_mode<p>
+Revision 1.3 2007/04/23 17:05:48 matsushima リプレース<p>
+Revision 1.2 2006/08/18 11:40:23 matsushima mode<p>
+Revision 1.1.1.1 2006/08/17 20:26:48 matsushima new <hr><h2>列挙型</h2>
+<a class="anchor" name="bf30c682bd617ed8ac1c9c8087232350"></a><!-- doxytag: member="Java3DModelStatic::@1" ref="bf30c682bd617ed8ac1c9c8087232350" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+予約済みのモデルの種類。 
+<p>
+<dl compact><dt><b>列挙型の値: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="bf30c682bd617ed8ac1c9c8087232350d99f4d14c85b21ff0ba0d4f4361408cc"></a><!-- doxytag: member="KIND_UNUSED" ref="bf30c682bd617ed8ac1c9c8087232350d99f4d14c85b21ff0ba0d4f4361408cc" args="" -->KIND_UNUSED</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" name="bf30c682bd617ed8ac1c9c8087232350f1dee95684fc4681e37d270ca8627785"></a><!-- doxytag: member="KIND_FRAGMENT" ref="bf30c682bd617ed8ac1c9c8087232350f1dee95684fc4681e37d270ca8627785" args="" -->KIND_FRAGMENT</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" name="bf30c682bd617ed8ac1c9c8087232350b44e51e181ef20ddac5b0bebc049f258"></a><!-- doxytag: member="KIND_FRAGMENT2" ref="bf30c682bd617ed8ac1c9c8087232350b44e51e181ef20ddac5b0bebc049f258" args="" -->KIND_FRAGMENT2</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" name="bf30c682bd617ed8ac1c9c8087232350b8e5b8fec06881328e27d8e6f44aba7a"></a><!-- doxytag: member="KIND_USED" ref="bf30c682bd617ed8ac1c9c8087232350b8e5b8fec06881328e27d8e6f44aba7a" args="" -->KIND_USED</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" name="bf30c682bd617ed8ac1c9c8087232350b41bde8e2253672989f436c5a3988e2a"></a><!-- doxytag: member="KIND_ENEMY1" ref="bf30c682bd617ed8ac1c9c8087232350b41bde8e2253672989f436c5a3988e2a" args="" -->KIND_ENEMY1</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dl>
+
+</div>
+</div><p>
+<hr><h2>関数</h2>
+<a class="anchor" name="5321cc5cb8e3391817f350195d1bff0e"></a><!-- doxytag: member="Java3DModelStatic::create_color_table" ref="5321cc5cb8e3391817f350195d1bff0e" args="(int cnt, const int *t)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int* Java3DModelStatic::create_color_table           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>cnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int *&nbsp;</td>
+          <td class="paramname"> <em>t</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+グラデーションカラーテーブルの作成。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>cnt</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>t</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>作成されたカラーテーブル。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e29f62be2ccac8f1a2e5264fa9dde406"></a><!-- doxytag: member="Java3DModelStatic::index_to_color" ref="e29f62be2ccac8f1a2e5264fa9dde406" args="(int *dst, const int *verts, int cnt, int *vert_colors, int mul, int div)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int* Java3DModelStatic::index_to_color           </td>
+          <td>(</td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int *&nbsp;</td>
+          <td class="paramname"> <em>verts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>cnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>vert_colors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>mul</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>div</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+色インデックスの配列を ARGB に変換する。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>dst</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>verts</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>cnt</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>vert_colors</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>mul</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>div</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>変換後の配列。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ed9a1b355acca5c98a540cb7c650a31c"></a><!-- doxytag: member="Java3DModelStatic::zoom_texture" ref="ed9a1b355acca5c98a540cb7c650a31c" args="(const int *src, int width, int height, int mul_w, int mul_h)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int* Java3DModelStatic::zoom_texture           </td>
+          <td>(</td>
+          <td class="paramtype">const int *&nbsp;</td>
+          <td class="paramname"> <em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>mul_w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>mul_h</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+テクスチャを拡大する。 バイリニアフィルタ(線形補完)。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>src</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>width</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>height</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>mul_w</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>mul_h</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>拡大後のテクスチャ。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="677269a3bf8cfc59be3e0fab30f2fcc3"></a><!-- doxytag: member="Java3DModelStatic::get_brightness_color" ref="677269a3bf8cfc59be3e0fab30f2fcc3" args="(int color, int brightness)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int Java3DModelStatic::get_brightness_color           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>brightness</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+指定された明るさで色を正規化。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>color</em>&nbsp;</td><td>正規化する元の色(RGB)。 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>brightness</em>&nbsp;</td><td>明るさ。 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>正規化された色。 <pre>
+              brightness &amp;lt= 0: 0xff000000
+              brightness &amp;gt= <a class="el" href="class_java_render_static.html#9e08a275b6137b2dd56a530eb5acfeea55670bb68120f3b506d9372fa2a9b2f8">BRIGHTNESS_MAX</a> - 1: 0xffffffe
+              brightness &amp;lt= <a class="el" href="">BRIGHTNESS_BORDER</a>: color * brightness / <a class="el" href="">BRIGHTNESS_BORDER</a>
+              brightness &amp;gt <a class="el" href="">BRIGHTNESS_BORDER</a>:
+                  color + (256 - color) * (brightness / <a class="el" href="">BRIGHTNESS_BORDER</a>) ^ 2
+                                        / (<a class="el" href="class_java_render_static.html#9e08a275b6137b2dd56a530eb5acfeea55670bb68120f3b506d9372fa2a9b2f8">BRIGHTNESS_MAX</a> / <a class="el" href="">BRIGHTNESS_BORDER</a>) ^ 2
+ </pre> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="bcb8e04086f60e07595aa1268229664a"></a><!-- doxytag: member="Java3DModelStatic::get_vert_cnt" ref="bcb8e04086f60e07595aa1268229664a" args="(int *polys, int s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int Java3DModelStatic::get_vert_cnt           </td>
+          <td>(</td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>polys</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>s</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+ポリゴン配列の現在のポリゴンの頂点数を数える。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>polys</em>&nbsp;</td><td>ポリゴン配列。 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>s</em>&nbsp;</td><td>ポリゴン配列内のインデックス。 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>頂点数。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="1289022bb3e0d8e8a7f8354ba2f70135"></a><!-- doxytag: member="Java3DModelStatic::set_vert" ref="1289022bb3e0d8e8a7f8354ba2f70135" args="(int *verts, int index, int color, int x, int y, int z)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Java3DModelStatic::set_vert           </td>
+          <td>(</td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>verts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+頂点座標配列のメンバを設定。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>verts</em>&nbsp;</td><td>頂点座標配列。 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>index</em>&nbsp;</td><td>頂点座標配列内のインデックス。-1 のときは全ての頂点。 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>color</em>&nbsp;</td><td>設定する色(ARGB)。 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>設定する x 座標。 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>設定する y 座標。 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>z</em>&nbsp;</td><td>設定する z 座標。 </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="408f5dc2efbcc275d02f80c24764b9b3"></a><!-- doxytag: member="Java3DModelStatic::set_vert_color" ref="408f5dc2efbcc275d02f80c24764b9b3" args="(int *verts, int index, int value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Java3DModelStatic::set_vert_color           </td>
+          <td>(</td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>verts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>value</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+頂点座標配列の色を設定。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>verts</em>&nbsp;</td><td>頂点座標配列。 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>index</em>&nbsp;</td><td>頂点座標配列内のインデックス。-1 のときは全ての頂点。 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>設定する色(ARGB)。 </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6285c7ba00bc534a6f1c4d553e80933e"></a><!-- doxytag: member="Java3DModelStatic::set_vert_xyz" ref="6285c7ba00bc534a6f1c4d553e80933e" args="(int *verts, int index, int x, int y, int z)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Java3DModelStatic::set_vert_xyz           </td>
+          <td>(</td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>verts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+頂点座標配列の x, y, z 座標を設定。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>verts</em>&nbsp;</td><td>頂点座標配列。 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>index</em>&nbsp;</td><td>頂点座標配列内のインデックス。-1 のときは全ての頂点。 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>設定する x 座標。 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>設定する y 座標。 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>z</em>&nbsp;</td><td>設定する z 座標。 </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<hr>このクラスの説明は次のファイルから生成されました:<ul>
+<li>D:/SRC/java/DF2/<a class="el" href="_java3_d_model_8cpp.html">Java3DModel.cpp</a></ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>DF2に対してThu Mar 13 01:29:05 2008に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.5 </small></address>
+</body>
+</html>

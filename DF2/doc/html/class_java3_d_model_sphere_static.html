@@ -1,0 +1,389 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>DF2: クラス Java3DModelSphereStatic</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 作成： Doxygen 1.5.5 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス Java3DModelSphereStatic</h1><!-- doxytag: class="Java3DModelSphereStatic" --><!-- doxytag: inherits="Java3DModelStatic" -->球体モデルの基本クラス。  
+<a href="#_details">[詳細]</a>
+<p>
+<div class="dynheader">
+Java3DModelSphereStaticに対する継承グラフ</div>
+<div class="dynsection">
+<p><center><img src="class_java3_d_model_sphere_static__inherit__graph.png" border="0" usemap="#_java3_d_model_sphere_static__inherit__map" alt="Inheritance graph"></center>
+<center><font size="2">[<a href="graph_legend.html">凡例</a>]</font></center></div>
+<div class="dynheader">
+Java3DModelSphereStaticのコラボレーション図</div>
+<div class="dynsection">
+<p><center><img src="class_java3_d_model_sphere_static__coll__graph.png" border="0" usemap="#_java3_d_model_sphere_static__coll__map" alt="Collaboration graph"></center>
+<center><font size="2">[<a href="graph_legend.html">凡例</a>]</font></center></div>
+
+<p>
+<a href="class_java3_d_model_sphere_static-members.html">すべてのメンバ一覧</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Public 型</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="class_java3_d_model_sphere_static.html#78087e3c34301c38f0c9da9b86c44606b42647efa5b10dbfbff8499c5df69786">DIV_A0</a> =  16, 
+<a class="el" href="class_java3_d_model_sphere_static.html#78087e3c34301c38f0c9da9b86c4460653b1b9a66f9cb711654f06422e0f1664">DIV_DA</a> =  4, 
+<a class="el" href="class_java3_d_model_sphere_static.html#78087e3c34301c38f0c9da9b86c4460606251dc145a6fef5c0a5dadfedbd4c45">DIV_B</a> =  16
+ }</td></tr>
+
+<tr><td colspan="2"><br><h2>Static Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java3_d_model_sphere_static.html#9cd975fcd6c0649423e46d898d83056b">init</a> (<a class="el" href="class_java3_d_model.html">Java3DModel</a> *model, int kind, int count, int damage, int render_mode, int width, int height, int unit, int surfaces, int *texture, int *texture_color_tbl, int texture_colors, int vert_colors, int vert_height, int div_a0, int div_da, int div_b)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">球体モデルを初期化する。  <a href="#9cd975fcd6c0649423e46d898d83056b"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Static Private メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java3_d_model_sphere_static.html#5473e24f671a66f587795cc3a67a7dae">get_div_a</a> (int b, int div_a0, int div_da)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">y 軸周りの分割数を返す。  <a href="#5473e24f671a66f587795cc3a67a7dae"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java3_d_model_sphere_static.html#2df4284728adba1aa7592ab98420e67e">get_vert_color</a> (int width, double a, double r, int surfaces, int *verts, int *vert_colors, int *texture_xs, int *texture_ys, int p)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">a-r 座標から x-z 座標に変換し、頂点の色を返す。  <a href="#2df4284728adba1aa7592ab98420e67e"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>説明</h2>
+球体モデルの基本クラス。 
+<p>
+<dl class="since" compact><dt><b>から:</b></dt><dd>1.0 2006/08/04 matsushima </dd></dl>
+<dl class="author" compact><dt><b>作者:</b></dt><dd>1.0 2006/08/04 matsushima </dd></dl>
+<dl class="version" compact><dt><b>バージョン:</b></dt><dd></dd></dl>
+<dl class="rcs" compact><dt><b>Id</b></dt><dd><a class="el" href="_java3_d_model_sphere_8cpp.html">Java3DModelSphere.cpp</a>,v 1.28 2008/03/06 16:42:45 matsushima Exp </dd></dl>
+<p>
+<dl class="rcs" compact><dt><b>Log</b></dt><dd><a class="el" href="_java3_d_model_sphere_8cpp.html">Java3DModelSphere.cpp</a>,v </dd></dl>
+Revision 1.28 2008/03/06 16:42:45 matsushima JavaDoc/Doxygen 対応<p>
+Revision 1.27 2008/03/06 15:39:49 matsushima h/cpp 共通化<p>
+Revision 1.26 2008/03/04 17:21:01 matsushima Java/C++ 共通化<p>
+Revision 1.25 2008/03/03 02:10:50 matsushima render ふりわけを <a class="el" href="class_java_render_buffer.html" title="レンダのバッファ。">JavaRenderBuffer</a> -&gt; JavaRenderXxx テクスチャを int[] -&gt; <a class="el" href="class_java_render_texture.html" title="ポリゴン塗りつぶし用テクスチャ、文字列描画用フォント。...">JavaRenderTexture</a><p>
+Revision 1.24 2007/12/01 22:14:14 matsushima 再登録<p>
+Revision 1.23 2007/05/24 01:01:36 matsushima no message<p>
+Revision 1.22 2007/05/23 15:41:43 matsushima <a class="el" href="class_java_render_buffer.html" title="レンダのバッファ。">JavaRenderBuffer</a>, JavaRenderInterface を <a class="el" href="class_java3_d.html" title="3D オブジェクト(空間 Java3DWorld, モデル Java3DModel)の抽象クラス。...">Java3D</a> から分離<p>
+Revision 1.16 2007/05/16 20:57:58 matsushima テクスチャマッピング<p>
+Revision 1.12 2007/05/14 13:38:19 matsushima Java/C++ 共通化<p>
+Revision 1.10 2007/05/10 22:29:39 matsushima Java/C++ 共通化<p>
+Revision 1.7 2007/05/08 22:13:37 matsushima Java/C++ 共通化<p>
+Revision 1.6 2007/05/08 15:25:01 matsushima スタティックメンバアクセス :: -&gt; .<p>
+Revision 1.5 2007/05/06 18:00:09 matsushima render_mode<p>
+Revision 1.3 2007/04/23 17:05:48 matsushima リプレース<p>
+Revision 1.2 2006/08/18 11:40:23 matsushima mode<p>
+Revision 1.1.1.1 2006/08/17 20:26:48 matsushima new <hr><h2>列挙型</h2>
+<a class="anchor" name="78087e3c34301c38f0c9da9b86c44606"></a><!-- doxytag: member="Java3DModelSphereStatic::@2" ref="78087e3c34301c38f0c9da9b86c44606" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl compact><dt><b>列挙型の値: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="78087e3c34301c38f0c9da9b86c44606b42647efa5b10dbfbff8499c5df69786"></a><!-- doxytag: member="DIV_A0" ref="78087e3c34301c38f0c9da9b86c44606b42647efa5b10dbfbff8499c5df69786" args="" -->DIV_A0</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" name="78087e3c34301c38f0c9da9b86c4460653b1b9a66f9cb711654f06422e0f1664"></a><!-- doxytag: member="DIV_DA" ref="78087e3c34301c38f0c9da9b86c4460653b1b9a66f9cb711654f06422e0f1664" args="" -->DIV_DA</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" name="78087e3c34301c38f0c9da9b86c4460606251dc145a6fef5c0a5dadfedbd4c45"></a><!-- doxytag: member="DIV_B" ref="78087e3c34301c38f0c9da9b86c4460606251dc145a6fef5c0a5dadfedbd4c45" args="" -->DIV_B</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dl>
+
+</div>
+</div><p>
+<hr><h2>関数</h2>
+<a class="anchor" name="9cd975fcd6c0649423e46d898d83056b"></a><!-- doxytag: member="Java3DModelSphereStatic::init" ref="9cd975fcd6c0649423e46d898d83056b" args="(Java3DModel *model, int kind, int count, int damage, int render_mode, int width, int height, int unit, int surfaces, int *texture, int *texture_color_tbl, int texture_colors, int vert_colors, int vert_height, int div_a0, int div_da, int div_b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Java3DModelSphereStatic::init           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_java3_d_model.html">Java3DModel</a> *&nbsp;</td>
+          <td class="paramname"> <em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>kind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>damage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>render_mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>unit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>surfaces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>texture_color_tbl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>texture_colors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>vert_colors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>vert_height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>div_a0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>div_da</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>div_b</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+球体モデルを初期化する。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>model</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>kind</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>count</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>damage</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>render_mode</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>width</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>height</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>unit</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>surfaces</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>texture</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>texture_color_tbl</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>texture_colors</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>vert_colors</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>vert_height</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>div_a0</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>div_da</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>div_b</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="5473e24f671a66f587795cc3a67a7dae"></a><!-- doxytag: member="Java3DModelSphereStatic::get_div_a" ref="5473e24f671a66f587795cc3a67a7dae" args="(int b, int div_a0, int div_da)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int Java3DModelSphereStatic::get_div_a           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>div_a0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>div_da</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+y 軸周りの分割数を返す。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>b</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>div_a0</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>div_da</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>y 軸周りの分割数。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2df4284728adba1aa7592ab98420e67e"></a><!-- doxytag: member="Java3DModelSphereStatic::get_vert_color" ref="2df4284728adba1aa7592ab98420e67e" args="(int width, double a, double r, int surfaces, int *verts, int *vert_colors, int *texture_xs, int *texture_ys, int p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int Java3DModelSphereStatic::get_vert_color           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>surfaces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>verts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>vert_colors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>texture_xs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>texture_ys</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>p</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+a-r 座標から x-z 座標に変換し、頂点の色を返す。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>width</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>a</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>r</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>surfaces</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>verts</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>vert_colors</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>頂点の色。 </dd></dl>
+
+</div>
+</div><p>
+<hr>このクラスの説明は次のファイルから生成されました:<ul>
+<li>D:/SRC/java/DF2/<a class="el" href="_java3_d_model_sphere_8cpp.html">Java3DModelSphere.cpp</a></ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>DF2に対してThu Mar 13 01:29:05 2008に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.5 </small></address>
+</body>
+</html>

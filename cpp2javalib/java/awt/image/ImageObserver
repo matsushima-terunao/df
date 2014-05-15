@@ -1,0 +1,51 @@
+/**
+ * @file
+ *
+ * $Id: java.awt.image.ImageObserver,v 1.3 2007/11/30 22:42:27 matsushima Exp $
+ *
+ * java.awt.image.ImageObserver : 
+ *
+ * @author  0.0 2005/03/19 matsushima h2java
+ * @author  0.1 2006/07/21 matsushima cpp2javalib
+ * @version $Revision: 1.3 $
+ * @since   0.0 2005/03/19 matsushima h2java
+ *
+ * $Log: java.awt.image.ImageObserver,v $
+ * Revision 1.3  2007/11/30 22:42:27  matsushima
+ * 再登録
+ *
+ * Revision 1.2  2007/05/08 15:24:46  matsushima
+ * スタティックメンバアクセス :: -> .
+ *
+ * Revision 1.1.1.1  2006/08/17 20:26:00  matsushima
+ * new
+ *
+ */
+
+#ifndef _JAVA_AWT_IMAGE_IMAGEOBSERVER_
+#define _JAVA_AWT_IMAGE_IMAGEOBSERVER_
+
+#include "../../../cpp2javalib.h"
+
+/*------------------------------------------------------------*/
+
+class ImageObserver
+{
+public:
+    enum
+    {
+        WIDTH       = 0x01,
+        HEIGHT      = 0x02,
+        PROPERTIES  = 0x04,
+        SOMEBITS    = 0x08,
+        FRAMEBITS   = 0x10,
+        ALLBITS     = 0x20,
+#undef ERROR
+        ERROR       = 0x40,
+        ABORT       = 0x80,
+    };
+};
+
+/*------------------------------------------------------------*/
+
+#endif /* #ifndef _JAVA_AWT_IMAGE_IMAGEOBSERVER_ */

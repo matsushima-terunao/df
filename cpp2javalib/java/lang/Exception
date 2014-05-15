@@ -1,0 +1,35 @@
+/**
+ * @file
+ *
+ * $Id: java.lang.Exception,v 1.1.1.1 2006/08/17 20:26:00 matsushima Exp $
+ *
+ * java.lang.Exception : 
+ *
+ * @author  0.0 2005/03/19 matsushima h2java
+ * @author  0.1 2006/07/27 matsushima cpp2javalib
+ * @version $Revision: 1.1.1.1 $
+ * @since   0.0 2005/03/19 matsushima h2java
+ *
+ * $Log: java.lang.Exception,v $
+ * Revision 1.1.1.1  2006/08/17 20:26:00  matsushima
+ * new
+ *
+ */
+
+#ifndef _JAVA_LANG_EXCEPTION_
+#define _JAVA_LANG_EXCEPTION_
+
+#include "../../cpp2javalib.h"
+
+/*------------------------------------------------------------*/
+
+class Exception : public Throwable
+{
+public:
+    Exception();
+    Exception(const char* message);
+};
+
+/*------------------------------------------------------------*/
+
+#endif /* #ifndef _JAVA_LANG_EXCEPTION_ */

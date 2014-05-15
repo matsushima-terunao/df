@@ -1,0 +1,679 @@
+/**
+ * @file
+ *
+ * $Id: java.awt.event.KeyEvent,v 1.5 2007/11/30 22:42:27 matsushima Exp $
+ *
+ * java.awt.event.KeyEvent : 
+ *
+ * @author  0.0 2005/03/19 matsushima h2java
+ * @author  0.1 2006/07/21 matsushima cpp2javalib
+ * @version $Revision: 1.5 $
+ * @since   0.0 2005/03/19 matsushima h2java
+ *
+ * $Log: java.awt.event.KeyEvent,v $
+ * Revision 1.5  2007/11/30 22:42:27  matsushima
+ * 再登録
+ *
+ * Revision 1.4  2007/05/10 22:29:47  matsushima
+ * Java/C++ 共通化
+ *
+ * Revision 1.3  2007/05/09 12:45:23  matsushima
+ * no message
+ *
+ * Revision 1.2  2007/05/07 21:24:19  matsushima
+ * staticメンバアクセス :: -> .
+ *
+ * Revision 1.1.1.1  2006/08/17 20:26:00  matsushima
+ * new
+ *
+ */
+
+#ifndef _JAVA_AWT_EVENT_KEYEVENT_
+#define _JAVA_AWT_EVENT_KEYEVENT_
+
+#include "../../../cpp2javalib.h"
+
+class Component;
+
+/*------------------------------------------------------------*/
+
+class KeyEvent : public Object
+{
+public:
+    enum
+    {
+#undef CHAR_UNDEFINED                  
+        CHAR_UNDEFINED                  = 65535,
+        _CHAR_UNDEFINED                  = 65535,
+#undef KEY_FIRST                       
+        KEY_FIRST                       = 400,
+        _KEY_FIRST                       = 400,
+#undef KEY_LAST                        
+        KEY_LAST                        = 402,
+        _KEY_LAST                        = 402,
+#undef KEY_LOCATION_LEFT               
+        KEY_LOCATION_LEFT               = 2,
+        _KEY_LOCATION_LEFT               = 2,
+#undef KEY_LOCATION_NUMPAD             
+        KEY_LOCATION_NUMPAD             = 4,
+        _KEY_LOCATION_NUMPAD             = 4,
+#undef KEY_LOCATION_RIGHT              
+        KEY_LOCATION_RIGHT              = 3,
+        _KEY_LOCATION_RIGHT              = 3,
+#undef KEY_LOCATION_STANDARD           
+        KEY_LOCATION_STANDARD           = 1,
+        _KEY_LOCATION_STANDARD           = 1,
+#undef KEY_LOCATION_UNKNOWN            
+        KEY_LOCATION_UNKNOWN            = 0,
+        _KEY_LOCATION_UNKNOWN            = 0,
+#undef KEY_PRESSED                     
+        KEY_PRESSED                     = 401,
+        _KEY_PRESSED                     = 401,
+#undef KEY_RELEASED                    
+        KEY_RELEASED                    = 402,
+        _KEY_RELEASED                    = 402,
+#undef KEY_TYPED                       
+        KEY_TYPED                       = 400,
+        _KEY_TYPED                       = 400,
+#undef VK_0                            
+        VK_0                            = 48,
+        _VK_0                            = 48,
+#undef VK_1                            
+        VK_1                            = 49,
+        _VK_1                            = 49,
+#undef VK_2                            
+        VK_2                            = 50,
+        _VK_2                            = 50,
+#undef VK_3                            
+        VK_3                            = 51,
+        _VK_3                            = 51,
+#undef VK_4                            
+        VK_4                            = 52,
+        _VK_4                            = 52,
+#undef VK_5                            
+        VK_5                            = 53,
+        _VK_5                            = 53,
+#undef VK_6                            
+        VK_6                            = 54,
+        _VK_6                            = 54,
+#undef VK_7                            
+        VK_7                            = 55,
+        _VK_7                            = 55,
+#undef VK_8                            
+        VK_8                            = 56,
+        _VK_8                            = 56,
+#undef VK_9                            
+        VK_9                            = 57,
+        _VK_9                            = 57,
+#undef VK_A                            
+        VK_A                            = 65,
+        _VK_A                            = 65,
+#undef VK_ACCEPT                       
+        VK_ACCEPT                       = 30,
+        _VK_ACCEPT                       = 30,
+#undef VK_ADD                          
+        VK_ADD                          = 107,
+        _VK_ADD                          = 107,
+#undef VK_AGAIN                        
+        VK_AGAIN                        = 65481,
+        _VK_AGAIN                        = 65481,
+#undef VK_ALL_CANDIDATES               
+        VK_ALL_CANDIDATES               = 256,
+        _VK_ALL_CANDIDATES               = 256,
+#undef VK_ALPHANUMERIC                 
+        VK_ALPHANUMERIC                 = 240,
+        _VK_ALPHANUMERIC                 = 240,
+#undef VK_ALT                          
+        VK_ALT                          = 18,
+        _VK_ALT                          = 18,
+#undef VK_ALT_GRAPH                    
+        VK_ALT_GRAPH                    = 65406,
+        _VK_ALT_GRAPH                    = 65406,
+#undef VK_AMPERSAND                    
+        VK_AMPERSAND                    = 150,
+        _VK_AMPERSAND                    = 150,
+#undef VK_ASTERISK                     
+        VK_ASTERISK                     = 151,
+        _VK_ASTERISK                     = 151,
+#undef VK_AT                           
+        VK_AT                           = 512,
+        _VK_AT                           = 512,
+#undef VK_B                            
+        VK_B                            = 66,
+        _VK_B                            = 66,
+#undef VK_BACK_QUOTE                   
+        VK_BACK_QUOTE                   = 192,
+        _VK_BACK_QUOTE                   = 192,
+#undef VK_BACK_SLASH                   
+        VK_BACK_SLASH                   = 92,
+        _VK_BACK_SLASH                   = 92,
+#undef VK_BACK_SPACE                   
+        VK_BACK_SPACE                   = 8,
+        _VK_BACK_SPACE                   = 8,
+#undef VK_BEGIN                        
+        VK_BEGIN                        = 65368,
+        _VK_BEGIN                        = 65368,
+#undef VK_BRACELEFT                    
+        VK_BRACELEFT                    = 161,
+        _VK_BRACELEFT                    = 161,
+#undef VK_BRACERIGHT                   
+        VK_BRACERIGHT                   = 162,
+        _VK_BRACERIGHT                   = 162,
+#undef VK_C                            
+        VK_C                            = 67,
+        _VK_C                            = 67,
+#undef VK_CANCEL                       
+        VK_CANCEL                       = 3,
+        _VK_CANCEL                       = 3,
+#undef VK_CAPS_LOCK                    
+        VK_CAPS_LOCK                    = 20,
+        _VK_CAPS_LOCK                    = 20,
+#undef VK_CIRCUMFLEX                   
+        VK_CIRCUMFLEX                   = 514,
+        _VK_CIRCUMFLEX                   = 514,
+#undef VK_CLEAR                        
+        VK_CLEAR                        = 12,
+        _VK_CLEAR                        = 12,
+#undef VK_CLOSE_BRACKET                
+        VK_CLOSE_BRACKET                = 93,
+        _VK_CLOSE_BRACKET                = 93,
+#undef VK_CODE_INPUT                   
+        VK_CODE_INPUT                   = 258,
+        _VK_CODE_INPUT                   = 258,
+#undef VK_COLON                        
+        VK_COLON                        = 513,
+        _VK_COLON                        = 513,
+#undef VK_COMMA                        
+        VK_COMMA                        = 44,
+        _VK_COMMA                        = 44,
+#undef VK_COMPOSE                      
+        VK_COMPOSE                      = 65312,
+        _VK_COMPOSE                      = 65312,
+#undef VK_CONTEXT_MENU                 
+        VK_CONTEXT_MENU                 = 525,
+        _VK_CONTEXT_MENU                 = 525,
+#undef VK_CONTROL                      
+        VK_CONTROL                      = 17,
+        _VK_CONTROL                      = 17,
+#undef VK_CONVERT                      
+        VK_CONVERT                      = 28,
+        _VK_CONVERT                      = 28,
+#undef VK_COPY                         
+        VK_COPY                         = 65485,
+        _VK_COPY                         = 65485,
+#undef VK_CUT                          
+        VK_CUT                          = 65489,
+        _VK_CUT                          = 65489,
+#undef VK_D                            
+        VK_D                            = 68,
+        _VK_D                            = 68,
+#undef VK_DEAD_ABOVEDOT                
+        VK_DEAD_ABOVEDOT                = 134,
+        _VK_DEAD_ABOVEDOT                = 134,
+#undef VK_DEAD_ABOVERING               
+        VK_DEAD_ABOVERING               = 136,
+        _VK_DEAD_ABOVERING               = 136,
+#undef VK_DEAD_ACUTE                   
+        VK_DEAD_ACUTE                   = 129,
+        _VK_DEAD_ACUTE                   = 129,
+#undef VK_DEAD_BREVE                   
+        VK_DEAD_BREVE                   = 133,
+        _VK_DEAD_BREVE                   = 133,
+#undef VK_DEAD_CARON                   
+        VK_DEAD_CARON                   = 138,
+        _VK_DEAD_CARON                   = 138,
+#undef VK_DEAD_CEDILLA                 
+        VK_DEAD_CEDILLA                 = 139,
+        _VK_DEAD_CEDILLA                 = 139,
+#undef VK_DEAD_CIRCUMFLEX              
+        VK_DEAD_CIRCUMFLEX              = 130,
+        _VK_DEAD_CIRCUMFLEX              = 130,
+#undef VK_DEAD_DIAERESIS               
+        VK_DEAD_DIAERESIS               = 135,
+        _VK_DEAD_DIAERESIS               = 135,
+#undef VK_DEAD_DOUBLEACUTE             
+        VK_DEAD_DOUBLEACUTE             = 137,
+        _VK_DEAD_DOUBLEACUTE             = 137,
+#undef VK_DEAD_GRAVE                   
+        VK_DEAD_GRAVE                   = 128,
+        _VK_DEAD_GRAVE                   = 128,
+#undef VK_DEAD_IOTA                    
+        VK_DEAD_IOTA                    = 141,
+        _VK_DEAD_IOTA                    = 141,
+#undef VK_DEAD_MACRON                  
+        VK_DEAD_MACRON                  = 132,
+        _VK_DEAD_MACRON                  = 132,
+#undef VK_DEAD_OGONEK                  
+        VK_DEAD_OGONEK                  = 140,
+        _VK_DEAD_OGONEK                  = 140,
+#undef VK_DEAD_SEMIVOICED_SOUND        
+        VK_DEAD_SEMIVOICED_SOUND        = 143,
+        _VK_DEAD_SEMIVOICED_SOUND        = 143,
+#undef VK_DEAD_TILDE                   
+        VK_DEAD_TILDE                   = 131,
+        _VK_DEAD_TILDE                   = 131,
+#undef VK_DEAD_VOICED_SOUND            
+        VK_DEAD_VOICED_SOUND            = 142,
+        _VK_DEAD_VOICED_SOUND            = 142,
+#undef VK_DECIMAL                      
+        VK_DECIMAL                      = 110,
+        _VK_DECIMAL                      = 110,
+#undef VK_DELETE                       
+        VK_DELETE                       = 127,
+        _VK_DELETE                       = 127,
+#undef VK_DIVIDE                       
+        VK_DIVIDE                       = 111,
+        _VK_DIVIDE                       = 111,
+#undef VK_DOLLAR                       
+        VK_DOLLAR                       = 515,
+        _VK_DOLLAR                       = 515,
+#undef VK_DOWN                         
+        VK_DOWN                         = 40,
+        _VK_DOWN                         = 40,
+#undef VK_E                            
+        VK_E                            = 69,
+        _VK_E                            = 69,
+#undef VK_END                          
+        VK_END                          = 35,
+        _VK_END                          = 35,
+#undef VK_ENTER                        
+        VK_ENTER                        = 10,
+        _VK_ENTER                        = 10,
+#undef VK_EQUALS                       
+        VK_EQUALS                       = 61,
+        _VK_EQUALS                       = 61,
+#undef VK_ESCAPE                       
+        VK_ESCAPE                       = 27,
+        _VK_ESCAPE                       = 27,
+#undef VK_EURO_SIGN                    
+        VK_EURO_SIGN                    = 516,
+        _VK_EURO_SIGN                    = 516,
+#undef VK_EXCLAMATION_MARK             
+        VK_EXCLAMATION_MARK             = 517,
+        _VK_EXCLAMATION_MARK             = 517,
+#undef VK_F                            
+        VK_F                            = 70,
+        _VK_F                            = 70,
+#undef VK_F1                           
+        VK_F1                           = 112,
+        _VK_F1                           = 112,
+#undef VK_F10                          
+        VK_F10                          = 121,
+        _VK_F10                          = 121,
+#undef VK_F11                          
+        VK_F11                          = 122,
+        _VK_F11                          = 122,
+#undef VK_F12                          
+        VK_F12                          = 123,
+        _VK_F12                          = 123,
+#undef VK_F13                          
+        VK_F13                          = 61440,
+        _VK_F13                          = 61440,
+#undef VK_F14                          
+        VK_F14                          = 61441,
+        _VK_F14                          = 61441,
+#undef VK_F15                          
+        VK_F15                          = 61442,
+        _VK_F15                          = 61442,
+#undef VK_F16                          
+        VK_F16                          = 61443,
+        _VK_F16                          = 61443,
+#undef VK_F17                          
+        VK_F17                          = 61444,
+        _VK_F17                          = 61444,
+#undef VK_F18                          
+        VK_F18                          = 61445,
+        _VK_F18                          = 61445,
+#undef VK_F19                          
+        VK_F19                          = 61446,
+        _VK_F19                          = 61446,
+#undef VK_F2                           
+        VK_F2                           = 113,
+        _VK_F2                           = 113,
+#undef VK_F20                          
+        VK_F20                          = 61447,
+        _VK_F20                          = 61447,
+#undef VK_F21                          
+        VK_F21                          = 61448,
+        _VK_F21                          = 61448,
+#undef VK_F22                          
+        VK_F22                          = 61449,
+        _VK_F22                          = 61449,
+#undef VK_F23                          
+        VK_F23                          = 61450,
+        _VK_F23                          = 61450,
+#undef VK_F24                          
+        VK_F24                          = 61451,
+        _VK_F24                          = 61451,
+#undef VK_F3                           
+        VK_F3                           = 114,
+        _VK_F3                           = 114,
+#undef VK_F4                           
+        VK_F4                           = 115,
+        _VK_F4                           = 115,
+#undef VK_F5                           
+        VK_F5                           = 116,
+        _VK_F5                           = 116,
+#undef VK_F6                           
+        VK_F6                           = 117,
+        _VK_F6                           = 117,
+#undef VK_F7                           
+        VK_F7                           = 118,
+        _VK_F7                           = 118,
+#undef VK_F8                           
+        VK_F8                           = 119,
+        _VK_F8                           = 119,
+#undef VK_F9                           
+        VK_F9                           = 120,
+        _VK_F9                           = 120,
+#undef VK_FINAL                        
+        VK_FINAL                        = 24,
+        _VK_FINAL                        = 24,
+#undef VK_FIND                         
+        VK_FIND                         = 65488,
+        _VK_FIND                         = 65488,
+#undef VK_FULL_WIDTH                   
+        VK_FULL_WIDTH                   = 243,
+        _VK_FULL_WIDTH                   = 243,
+#undef VK_G                            
+        VK_G                            = 71,
+        _VK_G                            = 71,
+#undef VK_GREATER                      
+        VK_GREATER                      = 160,
+        _VK_GREATER                      = 160,
+#undef VK_H                            
+        VK_H                            = 72,
+        _VK_H                            = 72,
+#undef VK_HALF_WIDTH                   
+        VK_HALF_WIDTH                   = 244,
+        _VK_HALF_WIDTH                   = 244,
+#undef VK_HELP                         
+        VK_HELP                         = 156,
+        _VK_HELP                         = 156,
+#undef VK_HIRAGANA                     
+        VK_HIRAGANA                     = 242,
+        _VK_HIRAGANA                     = 242,
+#undef VK_HOME                         
+        VK_HOME                         = 36,
+        _VK_HOME                         = 36,
+#undef VK_I                            
+        VK_I                            = 73,
+        _VK_I                            = 73,
+#undef VK_INPUT_METHOD_ON_OFF          
+        VK_INPUT_METHOD_ON_OFF          = 263,
+        _VK_INPUT_METHOD_ON_OFF          = 263,
+#undef VK_INSERT                       
+        VK_INSERT                       = 155,
+        _VK_INSERT                       = 155,
+#undef VK_INVERTED_EXCLAMATION_MARK    
+        VK_INVERTED_EXCLAMATION_MARK    = 518,
+        _VK_INVERTED_EXCLAMATION_MARK    = 518,
+#undef VK_J                            
+        VK_J                            = 74,
+        _VK_J                            = 74,
+#undef VK_JAPANESE_HIRAGANA            
+        VK_JAPANESE_HIRAGANA            = 260,
+        _VK_JAPANESE_HIRAGANA            = 260,
+#undef VK_JAPANESE_KATAKANA            
+        VK_JAPANESE_KATAKANA            = 259,
+        _VK_JAPANESE_KATAKANA            = 259,
+#undef VK_JAPANESE_ROMAN               
+        VK_JAPANESE_ROMAN               = 261,
+        _VK_JAPANESE_ROMAN               = 261,
+#undef VK_K                            
+        VK_K                            = 75,
+        _VK_K                            = 75,
+#undef VK_KANA                         
+        VK_KANA                         = 21,
+        _VK_KANA                         = 21,
+#undef VK_KANA_LOCK                    
+        VK_KANA_LOCK                    = 262,
+        _VK_KANA_LOCK                    = 262,
+#undef VK_KANJI                        
+        VK_KANJI                        = 25,
+        _VK_KANJI                        = 25,
+#undef VK_KATAKANA                     
+        VK_KATAKANA                     = 241,
+        _VK_KATAKANA                     = 241,
+#undef VK_KP_DOWN                      
+        VK_KP_DOWN                      = 225,
+        _VK_KP_DOWN                      = 225,
+#undef VK_KP_LEFT                      
+        VK_KP_LEFT                      = 226,
+        _VK_KP_LEFT                      = 226,
+#undef VK_KP_RIGHT                     
+        VK_KP_RIGHT                     = 227,
+        _VK_KP_RIGHT                     = 227,
+#undef VK_KP_UP                        
+        VK_KP_UP                        = 224,
+        _VK_KP_UP                        = 224,
+#undef VK_L                            
+        VK_L                            = 76,
+        _VK_L                            = 76,
+#undef VK_LEFT                         
+        VK_LEFT                         = 37,
+        _VK_LEFT                         = 37,
+#undef VK_LEFT_PARENTHESIS             
+        VK_LEFT_PARENTHESIS             = 519,
+        _VK_LEFT_PARENTHESIS             = 519,
+#undef VK_LESS                         
+        VK_LESS                         = 153,
+        _VK_LESS                         = 153,
+#undef VK_M                            
+        VK_M                            = 77,
+        _VK_M                            = 77,
+#undef VK_META                         
+        VK_META                         = 157,
+        _VK_META                         = 157,
+#undef VK_MINUS                        
+        VK_MINUS                        = 45,
+        _VK_MINUS                        = 45,
+#undef VK_MODECHANGE                   
+        VK_MODECHANGE                   = 31,
+        _VK_MODECHANGE                   = 31,
+#undef VK_MULTIPLY                     
+        VK_MULTIPLY                     = 106,
+        _VK_MULTIPLY                     = 106,
+#undef VK_N                            
+        VK_N                            = 78,
+        _VK_N                            = 78,
+#undef VK_NONCONVERT                   
+        VK_NONCONVERT                   = 29,
+        _VK_NONCONVERT                   = 29,
+#undef VK_NUM_LOCK                     
+        VK_NUM_LOCK                     = 144,
+        _VK_NUM_LOCK                     = 144,
+#undef VK_NUMBER_SIGN                  
+        VK_NUMBER_SIGN                  = 520,
+        _VK_NUMBER_SIGN                  = 520,
+#undef VK_NUMPAD0                      
+        VK_NUMPAD0                      = 96,
+        _VK_NUMPAD0                      = 96,
+#undef VK_NUMPAD1                      
+        VK_NUMPAD1                      = 97,
+        _VK_NUMPAD1                      = 97,
+#undef VK_NUMPAD2                      
+        VK_NUMPAD2                      = 98,
+        _VK_NUMPAD2                      = 98,
+#undef VK_NUMPAD3                      
+        VK_NUMPAD3                      = 99,
+        _VK_NUMPAD3                      = 99,
+#undef VK_NUMPAD4                      
+        VK_NUMPAD4                      = 100,
+        _VK_NUMPAD4                      = 100,
+#undef VK_NUMPAD5                      
+        VK_NUMPAD5                      = 101,
+        _VK_NUMPAD5                      = 101,
+#undef VK_NUMPAD6                      
+        VK_NUMPAD6                      = 102,
+        _VK_NUMPAD6                      = 102,
+#undef VK_NUMPAD7                      
+        VK_NUMPAD7                      = 103,
+        _VK_NUMPAD7                      = 103,
+#undef VK_NUMPAD8                      
+        VK_NUMPAD8                      = 104,
+        _VK_NUMPAD8                      = 104,
+#undef VK_NUMPAD9                      
+        VK_NUMPAD9                      = 105,
+        _VK_NUMPAD9                      = 105,
+#undef VK_O                            
+        VK_O                            = 79,
+        _VK_O                            = 79,
+#undef VK_OPEN_BRACKET                 
+        VK_OPEN_BRACKET                 = 91,
+        _VK_OPEN_BRACKET                 = 91,
+#undef VK_P                            
+        VK_P                            = 80,
+        _VK_P                            = 80,
+#undef VK_PAGE_DOWN                    
+        VK_PAGE_DOWN                    = 34,
+        _VK_PAGE_DOWN                    = 34,
+#undef VK_PAGE_UP                      
+        VK_PAGE_UP                      = 33,
+        _VK_PAGE_UP                      = 33,
+#undef VK_PASTE                        
+        VK_PASTE                        = 65487,
+        _VK_PASTE                        = 65487,
+#undef VK_PAUSE                        
+        VK_PAUSE                        = 19,
+        _VK_PAUSE                        = 19,
+#undef VK_PERIOD                       
+        VK_PERIOD                       = 46,
+        _VK_PERIOD                       = 46,
+#undef VK_PLUS                         
+        VK_PLUS                         = 521,
+        _VK_PLUS                         = 521,
+#undef VK_PREVIOUS_CANDIDATE           
+        VK_PREVIOUS_CANDIDATE           = 257,
+        _VK_PREVIOUS_CANDIDATE           = 257,
+#undef VK_PRINTSCREEN                  
+        VK_PRINTSCREEN                  = 154,
+        _VK_PRINTSCREEN                  = 154,
+#undef VK_PROPS                        
+        VK_PROPS                        = 65482,
+        _VK_PROPS                        = 65482,
+#undef VK_Q                            
+        VK_Q                            = 81,
+        _VK_Q                            = 81,
+#undef VK_QUOTE                        
+        VK_QUOTE                        = 222,
+        _VK_QUOTE                        = 222,
+#undef VK_QUOTEDBL                     
+        VK_QUOTEDBL                     = 152,
+        _VK_QUOTEDBL                     = 152,
+#undef VK_R                            
+        VK_R                            = 82,
+        _VK_R                            = 82,
+#undef VK_RIGHT                        
+        VK_RIGHT                        = 39,
+        _VK_RIGHT                        = 39,
+#undef VK_RIGHT_PARENTHESIS            
+        VK_RIGHT_PARENTHESIS            = 522,
+        _VK_RIGHT_PARENTHESIS            = 522,
+#undef VK_ROMAN_CHARACTERS             
+        VK_ROMAN_CHARACTERS             = 245,
+        _VK_ROMAN_CHARACTERS             = 245,
+#undef VK_S                            
+        VK_S                            = 83,
+        _VK_S                            = 83,
+#undef VK_SCROLL_LOCK                  
+        VK_SCROLL_LOCK                  = 145,
+        _VK_SCROLL_LOCK                  = 145,
+#undef VK_SEMICOLON                    
+        VK_SEMICOLON                    = 59,
+        _VK_SEMICOLON                    = 59,
+#undef VK_SEPARATER                    
+        VK_SEPARATER                    = 108,
+        _VK_SEPARATER                    = 108,
+#undef VK_SEPARATOR                    
+        VK_SEPARATOR                    = 108,
+        _VK_SEPARATOR                    = 108,
+#undef VK_SHIFT                        
+        VK_SHIFT                        = 16,
+        _VK_SHIFT                        = 16,
+#undef VK_SLASH                        
+        VK_SLASH                        = 47,
+        _VK_SLASH                        = 47,
+#undef VK_SPACE                        
+        VK_SPACE                        = 32,
+        _VK_SPACE                        = 32,
+#undef VK_STOP                         
+        VK_STOP                         = 65480,
+        _VK_STOP                         = 65480,
+#undef VK_SUBTRACT                     
+        VK_SUBTRACT                     = 109,
+        _VK_SUBTRACT                     = 109,
+#undef VK_T                            
+        VK_T                            = 84,
+        _VK_T                            = 84,
+#undef VK_TAB                          
+        VK_TAB                          = 9,
+        _VK_TAB                          = 9,
+#undef VK_U                            
+        VK_U                            = 85,
+        _VK_U                            = 85,
+#undef VK_UNDEFINED                    
+        VK_UNDEFINED                    = 0,
+        _VK_UNDEFINED                    = 0,
+#undef VK_UNDERSCORE                   
+        VK_UNDERSCORE                   = 523,
+        _VK_UNDERSCORE                   = 523,
+#undef VK_UNDO                         
+        VK_UNDO                         = 65483,
+        _VK_UNDO                         = 65483,
+#undef VK_UP                           
+        VK_UP                           = 38,
+        _VK_UP                           = 38,
+#undef VK_V                            
+        VK_V                            = 86,
+        _VK_V                            = 86,
+#undef VK_W                            
+        VK_W                            = 87,
+        _VK_W                            = 87,
+#undef VK_WINDOWS                      
+        VK_WINDOWS                      = 524,
+        _VK_WINDOWS                      = 524,
+#undef VK_X                            
+        VK_X                            = 88,
+        _VK_X                            = 88,
+#undef VK_Y                            
+        VK_Y                            = 89,
+        _VK_Y                            = 89,
+#undef VK_Z                            
+        VK_Z                            = 90,
+        _VK_Z                            = 90,
+
+        ALT_DOWN_MASK                   = 512,
+        ALT_GRAPH_DOWN_MASK             = 8192,
+        ALT_GRAPH_MASK                  = 32,
+        ALT_MASK                        = 8,
+        BUTTON1_DOWN_MASK               = 1024,
+        BUTTON1_MASK                    = 16,
+        BUTTON2_DOWN_MASK               = 2048,
+        BUTTON2_MASK                    = 8,
+        BUTTON3_DOWN_MASK               = 4096,
+        BUTTON3_MASK                    = 4,
+        CTRL_DOWN_MASK                  = 128,
+        CTRL_MASK                       = 2,
+        META_DOWN_MASK                  = 256,
+        META_MASK                       = 4,
+        SHIFT_DOWN_MASK                 = 64,
+        SHIFT_MASK                      = 1,
+    };
+
+public:
+    KeyEvent(Component* source, int id, long when, int modifiers, int keyCode, unsigned short keyChar);
+    virtual int getID();
+    virtual int getKeyCode();
+protected:
+    Component* source;
+    int id;
+    long when;
+    int modifiers;
+    int keyCode;
+    unsigned short keyChar;
+};
+
+/*------------------------------------------------------------*/
+
+#endif /* #ifndef _JAVA_AWT_EVENT_KEYEVENT_ */

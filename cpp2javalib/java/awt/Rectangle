@@ -1,0 +1,40 @@
+/**
+ * @file
+ *
+ * $Id: java.awt.Rectangle,v 1.1.1.1 2006/08/17 20:26:00 matsushima Exp $
+ *
+ * java.awt.Rectangle : 
+ *
+ * @author  0.0 2005/03/19 matsushima h2java
+ * @author  0.1 2006/07/23 matsushima cpp2javalib
+ * @version $Revision: 1.1.1.1 $
+ * @since   0.0 2005/03/19 matsushima h2java
+ *
+ * $Log: java.awt.Rectangle,v $
+ * Revision 1.1.1.1  2006/08/17 20:26:00  matsushima
+ * new
+ *
+ */
+
+#ifndef _JAVA_AWT_RECTANGLE_
+#define _JAVA_AWT_RECTANGLE_
+
+#include "../../cpp2javalib.h"
+
+/*------------------------------------------------------------*/
+
+class Rectangle : public Object//Rectangle2D
+    //, Cloneable, Serializable, Shape
+{
+public:
+    Rectangle();
+    Rectangle(int x, int y, int width, int height);
+    virtual ~Rectangle();
+    virtual double getWidth();
+    virtual double getHeight();
+    int x, y, width, height;
+};
+
+/*------------------------------------------------------------*/
+
+#endif /* #ifndef _JAVA_AWT_RECTANGLE_ */

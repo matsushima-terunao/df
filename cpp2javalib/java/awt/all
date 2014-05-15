@@ -1,0 +1,30 @@
+/**
+ * @file
+ *
+ * $Id: java.awt.h,v 1.1.1.1 2006/08/17 20:26:00 matsushima Exp $
+ *
+ * java.awt.h : 
+ *
+ * @author  0.0 2005/03/19 matsushima h2java
+ * @author  0.1 2006/07/20 matsushima cpp2javalib
+ * @version $Revision: 1.1.1.1 $
+ * @since   0.0 2005/03/19 matsushima h2java
+ *
+ * $Log: java.awt.h,v $
+ * Revision 1.1.1.1  2006/08/17 20:26:00  matsushima
+ * new
+ *
+ */
+
+#ifndef _JAVA_AWT_H_
+#define _JAVA_AWT_H_
+
+#include "Color"
+#include "Component"
+#include "Font"
+#include "FontMetrics"
+#include "Graphics"
+#include "Image_"
+#include "Rectangle"
+
+#endif /* #ifndef _JAVA_AWT_H_ */

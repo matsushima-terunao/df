@@ -1,0 +1,39 @@
+/**
+ * @file
+ *
+ * $Id: java.awt.image.IndexColorModel,v 1.1.1.1 2006/08/17 20:26:00 matsushima Exp $
+ *
+ * java.awt.image.IndexColorModel : 
+ *
+ * @author  0.0 2006/07/26 matsushima cpp2javalib
+ * @version $Revision: 1.1.1.1 $
+ * @since   0.0 2006/07/26 matsushima cpp2javalib
+ *
+ * $Log: java.awt.image.IndexColorModel,v $
+ * Revision 1.1.1.1  2006/08/17 20:26:00  matsushima
+ * new
+ *
+ */
+
+#ifndef _JAVA_AWT_IMAGE_INDEXCOLORMODEL_
+#define _JAVA_AWT_IMAGE_INDEXCOLORMODEL_
+
+#include "../../../cpp2javalib.h"
+#include "ColorModel"
+
+/*------------------------------------------------------------*/
+
+class IndexColorModel : public ColorModel
+{
+public:
+    IndexColorModel(int bits, int size, int* r, int* g, int* b);
+    virtual ~IndexColorModel();
+    virtual int getRGB(int pixel);
+protected:
+    int size;
+    int *r, *g, *b;
+};
+
+/*------------------------------------------------------------*/
+
+#endif /* #ifndef _JAVA_AWT_IMAGE_INDEXCOLORMODEL_ */

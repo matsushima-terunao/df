@@ -1,0 +1,38 @@
+/**
+ * @file
+ *
+ * $Id: java.awt.event.KeyListener,v 1.1.1.1 2006/08/17 20:26:00 matsushima Exp $
+ *
+ * java.awt.event.KeyListener : 
+ *
+ * @author  0.0 2005/03/19 matsushima h2java
+ * @author  0.1 2006/07/21 matsushima cpp2javalib
+ * @version $Revision: 1.1.1.1 $
+ * @since   0.0 2005/03/19 matsushima h2java
+ *
+ * $Log: java.awt.event.KeyListener,v $
+ * Revision 1.1.1.1  2006/08/17 20:26:00  matsushima
+ * new
+ *
+ */
+
+#ifndef _JAVA_AWT_EVENT_KEYLISTENER_
+#define _JAVA_AWT_EVENT_KEYLISTENER_
+
+#include "../../../cpp2javalib.h"
+
+class KeyEvent;
+
+/*------------------------------------------------------------*/
+
+class KeyListener
+{
+public:
+    virtual void keyTyped(KeyEvent* e) = 0;
+    virtual void keyPressed(KeyEvent* e) = 0;
+    virtual void keyReleased(KeyEvent* e) = 0;
+};
+
+/*------------------------------------------------------------*/
+
+#endif /* #ifndef _JAVA_AWT_EVENT_KEYLISTENER_ */

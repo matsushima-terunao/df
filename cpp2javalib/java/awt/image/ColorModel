@@ -1,0 +1,45 @@
+/**
+ * @file
+ *
+ * $Id: java.awt.image.ColorModel,v 1.3 2007/11/30 22:42:27 matsushima Exp $
+ *
+ * java.awt.image.ColorModel : 
+ *
+ * @author  0.0 2005/03/19 matsushima h2java
+ * @author  0.1 2006/07/25 matsushima cpp2javalib
+ * @version $Revision: 1.3 $
+ * @since   0.0 2005/03/19 matsushima h2java
+ *
+ * $Log: java.awt.image.ColorModel,v $
+ * Revision 1.3  2007/11/30 22:42:27  matsushima
+ * çƒìoò^
+ *
+ * Revision 1.2  2007/05/10 14:31:24  matsushima
+ * operator T&()
+ *
+ * Revision 1.1.1.1  2006/08/17 20:26:00  matsushima
+ * new
+ *
+ */
+
+#ifndef _JAVA_AWT_IMAGE_COLORMODEL_
+#define _JAVA_AWT_IMAGE_COLORMODEL_
+
+#include "../../../cpp2javalib.h"
+
+/*------------------------------------------------------------*/
+
+class ColorModel : public Object
+{
+public:
+    ColorModel(int bits);
+    virtual ~ColorModel();
+    virtual int getPixelSize();
+    virtual int getRGB(int pixel);
+protected:
+    int bits;
+};
+
+/*------------------------------------------------------------*/
+
+#endif /* #ifndef _JAVA_AWT_IMAGE_COLORMODEL_ */

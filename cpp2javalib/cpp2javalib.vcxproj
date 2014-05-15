@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A2E76E26-7839-4D39-81FD-014821DF0ADB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>cpp2javalib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..;../..;../../..</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..;../..;../../..</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="java\applet\all" />
+    <None Include="java\applet\Applet" />
+    <None Include="java\awt\all" />
+    <None Include="java\awt\Color" />
+    <None Include="java\awt\Component" />
+    <None Include="java\awt\event\all" />
+    <None Include="java\awt\event\KeyEvent" />
+    <None Include="java\awt\event\KeyListener" />
+    <None Include="java\awt\event\MouseEvent" />
+    <None Include="java\awt\event\MouseListener" />
+    <None Include="java\awt\event\MouseMotionListener" />
+    <None Include="java\awt\Font" />
+    <None Include="java\awt\FontMetrics" />
+    <None Include="java\awt\Graphics" />
+    <None Include="java\awt\image\all" />
+    <None Include="java\awt\image\ColorModel" />
+    <None Include="java\awt\image\DirectColorModel" />
+    <None Include="java\awt\image\ImageConsumer" />
+    <None Include="java\awt\image\ImageObserver" />
+    <None Include="java\awt\image\ImageProducer" />
+    <None Include="java\awt\image\IndexColorModel" />
+    <None Include="java\awt\image\MemoryImageSource" />
+    <None Include="java\awt\image\PixelGrabber" />
+    <None Include="java\awt\Image_" />
+    <None Include="java\awt\Rectangle" />
+    <None Include="java\io\all" />
+    <None Include="java\io\PrintStream" />
+    <None Include="java\lang\all" />
+    <None Include="java\lang\Exception" />
+    <None Include="java\lang\Integer" />
+    <None Include="java\lang\InterruptedException" />
+    <None Include="java\lang\Math" />
+    <None Include="java\lang\Object" />
+    <None Include="java\lang\Runnable" />
+    <None Include="java\lang\Runtime" />
+    <None Include="java\lang\String" />
+    <None Include="java\lang\System" />
+    <None Include="java\lang\Thread" />
+    <None Include="java\lang\Throwable" />
+    <None Include="java\net\all" />
+    <None Include="java\net\URL" />
+    <None Include="java\util\all" />
+    <None Include="java\util\Random" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppletViewer.h" />
+    <ClInclude Include="cpp2javalib.h" />
+    <ClInclude Include="cpp2javalibdef.h" />
+    <ClInclude Include="cpp2javalibimp.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AppletViewer.cpp" />
+    <ClCompile Include="java\applet\Applet.cpp" />
+    <ClCompile Include="java\awt\Color.cpp" />
+    <ClCompile Include="java\awt\Component.cpp" />
+    <ClCompile Include="java\awt\event\KeyEvent.cpp" />
+    <ClCompile Include="java\awt\event\MouseEvent.cpp" />
+    <ClCompile Include="java\awt\Font.cpp" />
+    <ClCompile Include="java\awt\FontMetrics.cpp" />
+    <ClCompile Include="java\awt\Graphics.cpp" />
+    <ClCompile Include="java\awt\Image.cpp" />
+    <ClCompile Include="java\awt\image\ColorModel.cpp" />
+    <ClCompile Include="java\awt\image\DirectColorModel.cpp" />
+    <ClCompile Include="java\awt\image\IndexColorModel.cpp" />
+    <ClCompile Include="java\awt\image\MemoryImageSource.cpp" />
+    <ClCompile Include="java\awt\image\PixelGrabber.cpp" />
+    <ClCompile Include="java\awt\Rectangle.cpp" />
+    <ClCompile Include="java\io\PrintStream.cpp" />
+    <ClCompile Include="java\lang\Exception.cpp" />
+    <ClCompile Include="java\lang\Integer.cpp" />
+    <ClCompile Include="java\lang\InterruptedException.cpp" />
+    <ClCompile Include="java\lang\Math.cpp" />
+    <ClCompile Include="java\lang\Object.cpp" />
+    <ClCompile Include="java\lang\Runtime.cpp" />
+    <ClCompile Include="java\lang\String.cpp" />
+    <ClCompile Include="java\lang\System.cpp" />
+    <ClCompile Include="java\lang\Thread.cpp" />
+    <ClCompile Include="java\lang\Throwable.cpp" />
+    <ClCompile Include="java\net\URL.cpp" />
+    <ClCompile Include="java\util\Random.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,35 @@
+/**
+ * @file
+ *
+ * $Id: java.awt.event.MouseListener,v 1.1.1.1 2006/08/17 20:26:00 matsushima Exp $
+ *
+ * java.awt.event.MouseListener : 
+ *
+ * @author  0.0 2005/03/19 matsushima h2java
+ * @author  0.1 2006/07/21 matsushima cpp2javalib
+ * @version $Revision: 1.1.1.1 $
+ * @since   0.0 2005/03/19 matsushima h2java
+ *
+ * $Log: java.awt.event.MouseListener,v $
+ * Revision 1.1.1.1  2006/08/17 20:26:00  matsushima
+ * new
+ *
+ */
+
+#ifndef _JAVA_AWT_EVENT_MOUSELISTENER_
+#define _JAVA_AWT_EVENT_MOUSELISTENER_
+
+#include "../../../cpp2javalib.h"
+
+/*------------------------------------------------------------*/
+
+class MouseListener
+{
+public:
+    virtual void mousePressed(MouseEvent* e) = 0;
+    virtual void mouseReleased(MouseEvent* e) = 0;
+};
+
+/*------------------------------------------------------------*/
+
+#endif /* #ifndef _JAVA_AWT_EVENT_MOUSELISTENER_ */

@@ -1,0 +1,1104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>DF2: クラス JavaRenderBuffer</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 作成： Doxygen 1.5.5 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス JavaRenderBuffer</h1><!-- doxytag: class="JavaRenderBuffer" --><!-- doxytag: inherits="JavaRender" -->レンダのバッファ。  
+<a href="#_details">[詳細]</a>
+<p>
+<div class="dynheader">
+JavaRenderBufferに対する継承グラフ</div>
+<div class="dynsection">
+<p><center><img src="class_java_render_buffer__inherit__graph.png" border="0" usemap="#_java_render_buffer__inherit__map" alt="Inheritance graph"></center>
+<center><font size="2">[<a href="graph_legend.html">凡例</a>]</font></center></div>
+<div class="dynheader">
+JavaRenderBufferのコラボレーション図</div>
+<div class="dynsection">
+<center><font size="2">[<a href="graph_legend.html">凡例</a>]</font></center></div>
+
+<p>
+<a href="class_java_render_buffer-members.html">すべてのメンバ一覧</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Public 型</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="class_java_render_buffer.html#d32da8945b8f4aa4355d54d80790c16f28ce04c91005b7058d09ecde5a4fab94">TRVERT_CNT</a> =  102400/2*2, 
+<a class="el" href="class_java_render_buffer.html#d32da8945b8f4aa4355d54d80790c16feaef2ee8c6cd91f4f3af1ff5b965063a">TRPOLY_CNT</a> =  102400/4*4, 
+<a class="el" href="class_java_render_buffer.html#d32da8945b8f4aa4355d54d80790c16ffd51335992d2a1cbae834d4753d9769a">TRPOLYVERT_CNT</a> =  102400/2*2
+ }</td></tr>
+
+<tr><td colspan="2"><br><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#7f2671cba16e1a4b659f122ca618574f">JavaRenderBuffer</a> (Applet *_applet, Component *component, int width, int height)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#8b57d46b87186ae2300fc209f1aa4918">JavaRenderBuffer</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#27f583313dc8132360c39e2e19b5d1d4">init_buffer</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">変換後バッファを作成する。  <a href="#27f583313dc8132360c39e2e19b5d1d4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#c7ffd230fb4dc88bee5bd6e7dddbae57">clear_buffer</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">変換後バッファをクリアする。  <a href="#c7ffd230fb4dc88bee5bd6e7dddbae57"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#033e796f96e2a145f0f979b39a0a966d">free_buffer</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">変換後バッファを破棄する。  <a href="#033e796f96e2a145f0f979b39a0a966d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#9ef37accac3ddd88bed79cb7e0cdbddd">append_buffer</a> (<a class="el" href="class_java_render_static_1_1_polygon.html">Polygon</a> *_trpoly, int z_order, int vert_cnt, int mode)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">変換後ポリゴンバッファにポリゴンを追加する。  <a href="#9ef37accac3ddd88bed79cb7e0cdbddd"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#7451efd4622a37d7d1a548c838c876a6">render</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ポリゴンバッファに追加されたモデルを描画する。 render スレッドに追加。  <a href="#7451efd4622a37d7d1a548c838c876a6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#c257b70a274b6400a58f225ca80067d4">run</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">render スレッド。  <a href="#c257b70a274b6400a58f225ca80067d4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#116b12ea6481d138b4c57bb6002d3bee">run_render</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ポリゴンバッファに追加されたモデルを描画する。  <a href="#116b12ea6481d138b4c57bb6002d3bee"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#2f7e5eb228e59a4a59fb9dbcdd6f0de3">clear</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">画面を消去する。  <a href="#2f7e5eb228e59a4a59fb9dbcdd6f0de3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#4792878774fe9a2f11fa1d39cb05e602">repaint</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">画面を再描画する。  <a href="#4792878774fe9a2f11fa1d39cb05e602"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#26c12c37d6b5740b1f40ae8b1b042433">paint</a> (Graphics *graphics, ImageObserver *observer)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">画面を描画する。  <a href="#26c12c37d6b5740b1f40ae8b1b042433"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual Vertex &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#4eb9643b5cd1e989b17481b58cbdc438">get_trvert</a> (int index)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual Vertex &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#bcf2def233e75a582502e248e6f68c67">get_trpolyvert</a> (int index)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#4f285fe8a00f21928e3794ec2a372b2e">set_trpolyvert</a> (int index, Vertex *trvert)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_java_render_static_1_1_polygon.html">Polygon</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#e31bd3821841cdffe8968499d823c801">get_trpoly</a> (int index)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#20eb1cac912253f58ca6cec935d34e9d">advance_trvert</a> (int trcount)</td></tr>
+
+<tr><td colspan="2"><br><h2>Public 変数</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#dc686c1f1a72b8cc2381beadfd8a9139">render_font</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_java_render_texture.html">JavaRenderTexture</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#aada6e8ab4622d31c43e63bc72b8e9b3">render_fontp</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_java_render_abstract.html">JavaRenderAbstract</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#fc475a6fb7319bef9e7daceff30b401c">render1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_java_render_abstract.html">JavaRenderAbstract</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#20072f914bdc6e0c6a1ddec01173b40f">render2</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_java_render_abstract.html">JavaRenderAbstract</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#47f546d6f4b3dd6dae47a5cc9f4d62ff">render_draw</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_java_render_abstract.html">JavaRenderAbstract</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#8d3c48847ebac6a92708ceb23d503757">render_paint</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#adb0173ca961c7ae8e9450724bdb2d8e">trvert_cnt_max</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#e664ff91416fef72cdf57fd64dbf86e1">trpoly_cnt_max</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#6263b579e68b274971a1c3dd89a4c4fd">trpolyvert_cnt_max</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">Vertex *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#a8c21c72f055162e729acc2ba09d588c">trverts</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#b6b324878bca124e5bc50ea1887ae8a6">trvert_cnt</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_java_render_static_1_1_polygon.html">Polygon</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#8304a5ed911298d28b0bc011a48df150">trpolys</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#79286a779857c62ff0f086afc747d597">trpoly_cnt</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">Vertex **&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#df28b6b28b564d58df883a7ba3163dd3">trpolyverts</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#9350bdc1fba60939553ca8a6b3c6b5b5">trpolyvert_cnt</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_java_render_static_1_1_polygon.html">Polygon</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#084dd5653f954355f5aff802deb57135">trpoly_top</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_java_render_static_1_1_polygon.html">Polygon</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#8357837a00bacd68a2cefdf7e1862fc3">trpoly_end</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_java_render_static_1_1_polygon.html">Polygon</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#c187c5fa6644af52f9af1b1a9f5276a7">trpoly_sort_top</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_java_render_static_1_1_polygon.html">Polygon</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#bbe8181f049d03fe7ded658130641863">trpoly_sort_end</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#2018d3335a8d45e251ed6cdc356f6337">buffer_cnt</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#c0110df5c69ba734bd7bdabbfffd3fc7">append_cnt</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#1fcc0935983980edc284ac07aeb29b45">sort_cnt</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_perf.html">Perf</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#5a81213322ea1abe357029a7dc2bd898">render_time</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_perf.html">Perf</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#cd9fd2d6e90562227e1854bea478a6fa">clear_time</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_perf.html">Perf</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#0c2efaefeaa5bf9d871c59466455a23f">repaint_time</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_perf.html">Perf</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#ecf69e0b9be03802aa4530359180541a">paint_time</a></td></tr>
+
+<tr><td colspan="2"><br><h2>Private 変数</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">Thread *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#a9f77c54595d6aae93ae8e8498f06ca4">thread</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">volatile boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#2ebad85b0b8af65a0aef4ece3d1196ae">is_notify_this</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">volatile boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#2efd42763328ad2322f6c2c60eda853a">is_notify_thread</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#a34f51ecc78aa35245d967feb44ef6fc">event_this</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_java_render_buffer.html#cd3b9babe795026361f6fb237b563a5e">event_thread</a></td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>説明</h2>
+レンダのバッファ。 
+<p>
+<dl class="since" compact><dt><b>から:</b></dt><dd>1.0 2007/05/23 matsushima </dd></dl>
+<dl class="author" compact><dt><b>作者:</b></dt><dd>1.0 2007/05/23 matsushima </dd></dl>
+<dl class="version" compact><dt><b>バージョン:</b></dt><dd></dd></dl>
+<dl class="rcs" compact><dt><b>Id</b></dt><dd><a class="el" href="_java_render_buffer_8cpp.html">JavaRenderBuffer.cpp</a>,v 1.6 2008/03/11 16:21:00 matsushima Exp </dd></dl>
+<p>
+<dl class="rcs" compact><dt><b>Log</b></dt><dd><a class="el" href="_java_render_buffer_8cpp.html">JavaRenderBuffer.cpp</a>,v </dd></dl>
+Revision 1.6 2008/03/11 16:21:00 matsushima RenderBuffer マルチスレッド化<p>
+Revision 1.3 2008/03/06 16:44:00 matsushima JavaDoc/Doxygen 対応<p>
+Revision 1.4 2008/03/06 15:39:50 matsushima h/cpp 共通化<p>
+Revision 1.3 2008/03/04 17:21:01 matsushima Java/C++ 共通化<p>
+Revision 1.2 2008/03/03 02:10:50 matsushima render ふりわけを <a class="el" href="class_java_render_buffer.html" title="レンダのバッファ。">JavaRenderBuffer</a> -&gt; JavaRenderXxx テクスチャを int[] -&gt; <a class="el" href="class_java_render_texture.html" title="ポリゴン塗りつぶし用テクスチャ、文字列描画用フォント。...">JavaRenderTexture</a><p>
+Revision 1.1 2008/02/24 05:52:06 matsushima JavaRenderInterface -&gt; <a class="el" href="class_java_render.html" title="レンダインターフェース。">JavaRender</a> <a class="el" href="class_java_render.html" title="レンダインターフェース。">JavaRender</a> -&gt; <a class="el" href="class_java_render_buffer.html" title="レンダのバッファ。">JavaRenderBuffer</a><p>
+Revision 1.14 2008/02/23 23:45:19 matsushima 高速化<p>
+Revision 1.13 2007/12/01 22:14:14 matsushima 再登録<p>
+Revision 1.12 2007/05/28 00:43:05 matsushima no message<p>
+Revision 1.11 2007/05/24 18:42:03 matsushima no message<p>
+Revision 1.10 2007/05/24 01:01:36 matsushima no message<p>
+Revision 1.9 2007/05/23 18:30:22 matsushima <a class="el" href="class_java_render_buffer.html" title="レンダのバッファ。">JavaRenderBuffer</a> カプセル化<p>
+Revision 1.1 2007/05/23 15:41:43 matsushima <a class="el" href="class_java_render_buffer.html" title="レンダのバッファ。">JavaRenderBuffer</a>, <a class="el" href="class_java_render.html" title="レンダインターフェース。">JavaRender</a> を <a class="el" href="class_java3_d.html" title="3D オブジェクト(空間 Java3DWorld, モデル Java3DModel)の抽象クラス。...">Java3D</a> から分離 <hr><h2>列挙型</h2>
+<a class="anchor" name="d32da8945b8f4aa4355d54d80790c16f"></a><!-- doxytag: member="JavaRenderBuffer::@10" ref="d32da8945b8f4aa4355d54d80790c16f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl compact><dt><b>列挙型の値: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="d32da8945b8f4aa4355d54d80790c16f28ce04c91005b7058d09ecde5a4fab94"></a><!-- doxytag: member="TRVERT_CNT" ref="d32da8945b8f4aa4355d54d80790c16f28ce04c91005b7058d09ecde5a4fab94" args="" -->TRVERT_CNT</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" name="d32da8945b8f4aa4355d54d80790c16feaef2ee8c6cd91f4f3af1ff5b965063a"></a><!-- doxytag: member="TRPOLY_CNT" ref="d32da8945b8f4aa4355d54d80790c16feaef2ee8c6cd91f4f3af1ff5b965063a" args="" -->TRPOLY_CNT</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" name="d32da8945b8f4aa4355d54d80790c16ffd51335992d2a1cbae834d4753d9769a"></a><!-- doxytag: member="TRPOLYVERT_CNT" ref="d32da8945b8f4aa4355d54d80790c16ffd51335992d2a1cbae834d4753d9769a" args="" -->TRPOLYVERT_CNT</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dl>
+
+</div>
+</div><p>
+<hr><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" name="7f2671cba16e1a4b659f122ca618574f"></a><!-- doxytag: member="JavaRenderBuffer::JavaRenderBuffer" ref="7f2671cba16e1a4b659f122ca618574f" args="(Applet *_applet, Component *component, int width, int height)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">JavaRenderBuffer::JavaRenderBuffer           </td>
+          <td>(</td>
+          <td class="paramtype">Applet *&nbsp;</td>
+          <td class="paramname"> <em>_applet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Component *&nbsp;</td>
+          <td class="paramname"> <em>component</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>height</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="8b57d46b87186ae2300fc209f1aa4918"></a><!-- doxytag: member="JavaRenderBuffer::JavaRenderBuffer" ref="8b57d46b87186ae2300fc209f1aa4918" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual JavaRenderBuffer::JavaRenderBuffer           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<hr><h2>関数</h2>
+<a class="anchor" name="27f583313dc8132360c39e2e19b5d1d4"></a><!-- doxytag: member="JavaRenderBuffer::init_buffer" ref="27f583313dc8132360c39e2e19b5d1d4" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderBuffer::init_buffer           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+変換後バッファを作成する。 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="c7ffd230fb4dc88bee5bd6e7dddbae57"></a><!-- doxytag: member="JavaRenderBuffer::clear_buffer" ref="c7ffd230fb4dc88bee5bd6e7dddbae57" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderBuffer::clear_buffer           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+変換後バッファをクリアする。 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="033e796f96e2a145f0f979b39a0a966d"></a><!-- doxytag: member="JavaRenderBuffer::free_buffer" ref="033e796f96e2a145f0f979b39a0a966d" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderBuffer::free_buffer           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+変換後バッファを破棄する。 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="9ef37accac3ddd88bed79cb7e0cdbddd"></a><!-- doxytag: member="JavaRenderBuffer::append_buffer" ref="9ef37accac3ddd88bed79cb7e0cdbddd" args="(Polygon *_trpoly, int z_order, int vert_cnt, int mode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderBuffer::append_buffer           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_java_render_static_1_1_polygon.html">Polygon</a> *&nbsp;</td>
+          <td class="paramname"> <em>_trpoly</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>z_order</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>vert_cnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>mode</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+変換後ポリゴンバッファにポリゴンを追加する。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>trpoly</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>z_order</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>vert_cnt</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>mode</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="7451efd4622a37d7d1a548c838c876a6"></a><!-- doxytag: member="JavaRenderBuffer::render" ref="7451efd4622a37d7d1a548c838c876a6" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderBuffer::render           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+ポリゴンバッファに追加されたモデルを描画する。 render スレッドに追加。 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="c257b70a274b6400a58f225ca80067d4"></a><!-- doxytag: member="JavaRenderBuffer::run" ref="c257b70a274b6400a58f225ca80067d4" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderBuffer::run           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+render スレッド。 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="116b12ea6481d138b4c57bb6002d3bee"></a><!-- doxytag: member="JavaRenderBuffer::run_render" ref="116b12ea6481d138b4c57bb6002d3bee" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderBuffer::run_render           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+ポリゴンバッファに追加されたモデルを描画する。 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="2f7e5eb228e59a4a59fb9dbcdd6f0de3"></a><!-- doxytag: member="JavaRenderBuffer::clear" ref="2f7e5eb228e59a4a59fb9dbcdd6f0de3" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderBuffer::clear           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+画面を消去する。 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="4792878774fe9a2f11fa1d39cb05e602"></a><!-- doxytag: member="JavaRenderBuffer::repaint" ref="4792878774fe9a2f11fa1d39cb05e602" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderBuffer::repaint           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+画面を再描画する。 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="26c12c37d6b5740b1f40ae8b1b042433"></a><!-- doxytag: member="JavaRenderBuffer::paint" ref="26c12c37d6b5740b1f40ae8b1b042433" args="(Graphics *graphics, ImageObserver *observer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderBuffer::paint           </td>
+          <td>(</td>
+          <td class="paramtype">Graphics *&nbsp;</td>
+          <td class="paramname"> <em>graphics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ImageObserver *&nbsp;</td>
+          <td class="paramname"> <em>observer</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+画面を描画する。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>graphics</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>observer</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4eb9643b5cd1e989b17481b58cbdc438"></a><!-- doxytag: member="JavaRenderBuffer::get_trvert" ref="4eb9643b5cd1e989b17481b58cbdc438" args="(int index)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Vertex&amp; JavaRenderBuffer::get_trvert           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>index</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="bcf2def233e75a582502e248e6f68c67"></a><!-- doxytag: member="JavaRenderBuffer::get_trpolyvert" ref="bcf2def233e75a582502e248e6f68c67" args="(int index)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Vertex&amp; JavaRenderBuffer::get_trpolyvert           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>index</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="4f285fe8a00f21928e3794ec2a372b2e"></a><!-- doxytag: member="JavaRenderBuffer::set_trpolyvert" ref="4f285fe8a00f21928e3794ec2a372b2e" args="(int index, Vertex *trvert)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderBuffer::set_trpolyvert           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vertex *&nbsp;</td>
+          <td class="paramname"> <em>trvert</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="e31bd3821841cdffe8968499d823c801"></a><!-- doxytag: member="JavaRenderBuffer::get_trpoly" ref="e31bd3821841cdffe8968499d823c801" args="(int index)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_java_render_static_1_1_polygon.html">Polygon</a>&amp; JavaRenderBuffer::get_trpoly           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>index</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="20eb1cac912253f58ca6cec935d34e9d"></a><!-- doxytag: member="JavaRenderBuffer::advance_trvert" ref="20eb1cac912253f58ca6cec935d34e9d" args="(int trcount)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JavaRenderBuffer::advance_trvert           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>trcount</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<hr><h2>変数</h2>
+<a class="anchor" name="dc686c1f1a72b8cc2381beadfd8a9139"></a><!-- doxytag: member="JavaRenderBuffer::render_font" ref="dc686c1f1a72b8cc2381beadfd8a9139" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_java_render_texture.html">JavaRenderTexture</a>* <a class="el" href="class_java_render_buffer.html#dc686c1f1a72b8cc2381beadfd8a9139">JavaRenderBuffer::render_font</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="aada6e8ab4622d31c43e63bc72b8e9b3"></a><!-- doxytag: member="JavaRenderBuffer::render_fontp" ref="aada6e8ab4622d31c43e63bc72b8e9b3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_java_render_texture.html">JavaRenderTexture</a>* <a class="el" href="class_java_render_buffer.html#aada6e8ab4622d31c43e63bc72b8e9b3">JavaRenderBuffer::render_fontp</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="fc475a6fb7319bef9e7daceff30b401c"></a><!-- doxytag: member="JavaRenderBuffer::render1" ref="fc475a6fb7319bef9e7daceff30b401c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_java_render_abstract.html">JavaRenderAbstract</a>* <a class="el" href="class_java_render_buffer.html#fc475a6fb7319bef9e7daceff30b401c">JavaRenderBuffer::render1</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="20072f914bdc6e0c6a1ddec01173b40f"></a><!-- doxytag: member="JavaRenderBuffer::render2" ref="20072f914bdc6e0c6a1ddec01173b40f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_java_render_abstract.html">JavaRenderAbstract</a>* <a class="el" href="class_java_render_buffer.html#20072f914bdc6e0c6a1ddec01173b40f">JavaRenderBuffer::render2</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="47f546d6f4b3dd6dae47a5cc9f4d62ff"></a><!-- doxytag: member="JavaRenderBuffer::render_draw" ref="47f546d6f4b3dd6dae47a5cc9f4d62ff" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_java_render_abstract.html">JavaRenderAbstract</a>* <a class="el" href="class_java_render_buffer.html#47f546d6f4b3dd6dae47a5cc9f4d62ff">JavaRenderBuffer::render_draw</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="8d3c48847ebac6a92708ceb23d503757"></a><!-- doxytag: member="JavaRenderBuffer::render_paint" ref="8d3c48847ebac6a92708ceb23d503757" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_java_render_abstract.html">JavaRenderAbstract</a>* <a class="el" href="class_java_render_buffer.html#8d3c48847ebac6a92708ceb23d503757">JavaRenderBuffer::render_paint</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="a9f77c54595d6aae93ae8e8498f06ca4"></a><!-- doxytag: member="JavaRenderBuffer::thread" ref="a9f77c54595d6aae93ae8e8498f06ca4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Thread* <a class="el" href="class_java_render_buffer.html#a9f77c54595d6aae93ae8e8498f06ca4">JavaRenderBuffer::thread</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="2ebad85b0b8af65a0aef4ece3d1196ae"></a><!-- doxytag: member="JavaRenderBuffer::is_notify_this" ref="2ebad85b0b8af65a0aef4ece3d1196ae" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile boolean <a class="el" href="class_java_render_buffer.html#2ebad85b0b8af65a0aef4ece3d1196ae">JavaRenderBuffer::is_notify_this</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="2efd42763328ad2322f6c2c60eda853a"></a><!-- doxytag: member="JavaRenderBuffer::is_notify_thread" ref="2efd42763328ad2322f6c2c60eda853a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile boolean <a class="el" href="class_java_render_buffer.html#2efd42763328ad2322f6c2c60eda853a">JavaRenderBuffer::is_notify_thread</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="a34f51ecc78aa35245d967feb44ef6fc"></a><!-- doxytag: member="JavaRenderBuffer::event_this" ref="a34f51ecc78aa35245d967feb44ef6fc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* <a class="el" href="class_java_render_buffer.html#a34f51ecc78aa35245d967feb44ef6fc">JavaRenderBuffer::event_this</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="cd3b9babe795026361f6fb237b563a5e"></a><!-- doxytag: member="JavaRenderBuffer::event_thread" ref="cd3b9babe795026361f6fb237b563a5e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* <a class="el" href="class_java_render_buffer.html#cd3b9babe795026361f6fb237b563a5e">JavaRenderBuffer::event_thread</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="adb0173ca961c7ae8e9450724bdb2d8e"></a><!-- doxytag: member="JavaRenderBuffer::trvert_cnt_max" ref="adb0173ca961c7ae8e9450724bdb2d8e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_buffer.html#adb0173ca961c7ae8e9450724bdb2d8e">JavaRenderBuffer::trvert_cnt_max</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="e664ff91416fef72cdf57fd64dbf86e1"></a><!-- doxytag: member="JavaRenderBuffer::trpoly_cnt_max" ref="e664ff91416fef72cdf57fd64dbf86e1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_buffer.html#e664ff91416fef72cdf57fd64dbf86e1">JavaRenderBuffer::trpoly_cnt_max</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="6263b579e68b274971a1c3dd89a4c4fd"></a><!-- doxytag: member="JavaRenderBuffer::trpolyvert_cnt_max" ref="6263b579e68b274971a1c3dd89a4c4fd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_buffer.html#6263b579e68b274971a1c3dd89a4c4fd">JavaRenderBuffer::trpolyvert_cnt_max</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="a8c21c72f055162e729acc2ba09d588c"></a><!-- doxytag: member="JavaRenderBuffer::trverts" ref="a8c21c72f055162e729acc2ba09d588c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vertex* <a class="el" href="class_java_render_buffer.html#a8c21c72f055162e729acc2ba09d588c">JavaRenderBuffer::trverts</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="b6b324878bca124e5bc50ea1887ae8a6"></a><!-- doxytag: member="JavaRenderBuffer::trvert_cnt" ref="b6b324878bca124e5bc50ea1887ae8a6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_buffer.html#b6b324878bca124e5bc50ea1887ae8a6">JavaRenderBuffer::trvert_cnt</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="8304a5ed911298d28b0bc011a48df150"></a><!-- doxytag: member="JavaRenderBuffer::trpolys" ref="8304a5ed911298d28b0bc011a48df150" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_java_render_static_1_1_polygon.html">Polygon</a>* <a class="el" href="class_java_render_buffer.html#8304a5ed911298d28b0bc011a48df150">JavaRenderBuffer::trpolys</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="79286a779857c62ff0f086afc747d597"></a><!-- doxytag: member="JavaRenderBuffer::trpoly_cnt" ref="79286a779857c62ff0f086afc747d597" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_buffer.html#79286a779857c62ff0f086afc747d597">JavaRenderBuffer::trpoly_cnt</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="df28b6b28b564d58df883a7ba3163dd3"></a><!-- doxytag: member="JavaRenderBuffer::trpolyverts" ref="df28b6b28b564d58df883a7ba3163dd3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vertex** <a class="el" href="class_java_render_buffer.html#df28b6b28b564d58df883a7ba3163dd3">JavaRenderBuffer::trpolyverts</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="9350bdc1fba60939553ca8a6b3c6b5b5"></a><!-- doxytag: member="JavaRenderBuffer::trpolyvert_cnt" ref="9350bdc1fba60939553ca8a6b3c6b5b5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_buffer.html#9350bdc1fba60939553ca8a6b3c6b5b5">JavaRenderBuffer::trpolyvert_cnt</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="084dd5653f954355f5aff802deb57135"></a><!-- doxytag: member="JavaRenderBuffer::trpoly_top" ref="084dd5653f954355f5aff802deb57135" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_java_render_static_1_1_polygon.html">Polygon</a>* <a class="el" href="class_java_render_buffer.html#084dd5653f954355f5aff802deb57135">JavaRenderBuffer::trpoly_top</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="8357837a00bacd68a2cefdf7e1862fc3"></a><!-- doxytag: member="JavaRenderBuffer::trpoly_end" ref="8357837a00bacd68a2cefdf7e1862fc3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_java_render_static_1_1_polygon.html">Polygon</a>* <a class="el" href="class_java_render_buffer.html#8357837a00bacd68a2cefdf7e1862fc3">JavaRenderBuffer::trpoly_end</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="c187c5fa6644af52f9af1b1a9f5276a7"></a><!-- doxytag: member="JavaRenderBuffer::trpoly_sort_top" ref="c187c5fa6644af52f9af1b1a9f5276a7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_java_render_static_1_1_polygon.html">Polygon</a>* <a class="el" href="class_java_render_buffer.html#c187c5fa6644af52f9af1b1a9f5276a7">JavaRenderBuffer::trpoly_sort_top</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="bbe8181f049d03fe7ded658130641863"></a><!-- doxytag: member="JavaRenderBuffer::trpoly_sort_end" ref="bbe8181f049d03fe7ded658130641863" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_java_render_static_1_1_polygon.html">Polygon</a>* <a class="el" href="class_java_render_buffer.html#bbe8181f049d03fe7ded658130641863">JavaRenderBuffer::trpoly_sort_end</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="2018d3335a8d45e251ed6cdc356f6337"></a><!-- doxytag: member="JavaRenderBuffer::buffer_cnt" ref="2018d3335a8d45e251ed6cdc356f6337" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_buffer.html#2018d3335a8d45e251ed6cdc356f6337">JavaRenderBuffer::buffer_cnt</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="c0110df5c69ba734bd7bdabbfffd3fc7"></a><!-- doxytag: member="JavaRenderBuffer::append_cnt" ref="c0110df5c69ba734bd7bdabbfffd3fc7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_buffer.html#c0110df5c69ba734bd7bdabbfffd3fc7">JavaRenderBuffer::append_cnt</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="1fcc0935983980edc284ac07aeb29b45"></a><!-- doxytag: member="JavaRenderBuffer::sort_cnt" ref="1fcc0935983980edc284ac07aeb29b45" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_java_render_buffer.html#1fcc0935983980edc284ac07aeb29b45">JavaRenderBuffer::sort_cnt</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="5a81213322ea1abe357029a7dc2bd898"></a><!-- doxytag: member="JavaRenderBuffer::render_time" ref="5a81213322ea1abe357029a7dc2bd898" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_perf.html">Perf</a>* <a class="el" href="class_java_render_buffer.html#5a81213322ea1abe357029a7dc2bd898">JavaRenderBuffer::render_time</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="cd9fd2d6e90562227e1854bea478a6fa"></a><!-- doxytag: member="JavaRenderBuffer::clear_time" ref="cd9fd2d6e90562227e1854bea478a6fa" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_perf.html">Perf</a>* <a class="el" href="class_java_render_buffer.html#cd9fd2d6e90562227e1854bea478a6fa">JavaRenderBuffer::clear_time</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="0c2efaefeaa5bf9d871c59466455a23f"></a><!-- doxytag: member="JavaRenderBuffer::repaint_time" ref="0c2efaefeaa5bf9d871c59466455a23f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_perf.html">Perf</a>* <a class="el" href="class_java_render_buffer.html#0c2efaefeaa5bf9d871c59466455a23f">JavaRenderBuffer::repaint_time</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="ecf69e0b9be03802aa4530359180541a"></a><!-- doxytag: member="JavaRenderBuffer::paint_time" ref="ecf69e0b9be03802aa4530359180541a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_perf.html">Perf</a>* <a class="el" href="class_java_render_buffer.html#ecf69e0b9be03802aa4530359180541a">JavaRenderBuffer::paint_time</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<hr>このクラスの説明は次のファイルから生成されました:<ul>
+<li>D:/SRC/java/DF2/<a class="el" href="_java_render_buffer_8cpp.html">JavaRenderBuffer.cpp</a></ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>DF2に対してThu Mar 13 01:29:05 2008に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.5 </small></address>
+</body>
+</html>

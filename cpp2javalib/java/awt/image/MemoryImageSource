@@ -1,0 +1,49 @@
+/**
+ * @file
+ *
+ * $Id: java.awt.image.MemoryImageSource,v 1.1.1.1 2006/08/17 20:26:00 matsushima Exp $
+ *
+ * java.awt.image.MemoryImageSource : 
+ *
+ * @author  0.0 2005/03/19 matsushima h2java
+ * @author  0.1 2006/07/25 matsushima cpp2javalib
+ * @version $Revision: 1.1.1.1 $
+ * @since   0.0 2005/03/19 matsushima h2java
+ *
+ * $Log: java.awt.image.MemoryImageSource,v $
+ * Revision 1.1.1.1  2006/08/17 20:26:00  matsushima
+ * new
+ *
+ */
+
+#ifndef _JAVA_AWT_IMAGE_MEMORYIMAGESOURCE_
+#define _JAVA_AWT_IMAGE_MEMORYIMAGESOURCE_
+
+#include "../../../cpp2javalib.h"
+#include "ImageProducer"
+
+class ColorModel;
+class ImageConsumer;
+
+/*------------------------------------------------------------*/
+
+class MemoryImageSource : public Object, public ImageProducer
+{
+public:
+    MemoryImageSource(int w, int h, ColorModel* cm, int* pix, int off, int scan);
+    virtual void setAnimated(bool animated);
+    virtual void setFullBufferUpdates(bool fullbuffers);
+    virtual void newPixels();
+    // ImageProducer
+    virtual void addConsumer(ImageConsumer* ic);
+    virtual void startProduction(ImageConsumer* ic);
+protected:
+    int width, height;
+    int* pix;
+    bool animated;
+    ImageConsumer* consumer;
+};
+
+/*------------------------------------------------------------*/
+
+#endif /* #ifndef _JAVA_AWT_IMAGE_MEMORYIMAGESOURCE_ */

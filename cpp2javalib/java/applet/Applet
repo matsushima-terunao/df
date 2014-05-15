@@ -1,0 +1,49 @@
+/**
+ * @file
+ *
+ * $Id: java.applet.Applet,v 1.3 2007/11/30 22:42:27 matsushima Exp $
+ *
+ * java.applet.Applet : 
+ *
+ * @author  0.0 2005/03/19 matsushima h2java
+ * @author  0.1 2006/07/20 matsushima cpp2javalib
+ * @version $Revision: 1.3 $
+ * @since   0.0 2005/03/19 matsushima h2java
+ *
+ * $Log: java.applet.Applet,v $
+ * Revision 1.3  2007/11/30 22:42:27  matsushima
+ * çƒìoò^
+ *
+ * Revision 1.2  2007/05/14 05:21:53  matsushima
+ * no message
+ *
+ * Revision 1.1.1.1  2006/08/17 20:26:00  matsushima
+ * new
+ *
+ */
+
+#ifndef _JAVA_APPLET_APPLET_
+#define _JAVA_APPLET_APPLET_
+
+#include "../../cpp2javalib.h"
+#include "../awt/Component"
+
+class Image;
+class URL;
+
+/*------------------------------------------------------------*/
+
+class Applet : public Component//Panel
+{
+public:
+    virtual URL getCodeBase();
+    virtual Image* getImage(URL* url, const char* name);
+    virtual void init();
+    virtual void start();
+    virtual void stop();
+    virtual void destroy();
+};
+
+/*------------------------------------------------------------*/
+
+#endif /* #ifndef _JAVA_APPLET_APPLET_ */

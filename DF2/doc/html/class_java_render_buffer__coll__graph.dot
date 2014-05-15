@@ -1,0 +1,20 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize=10,labelfontname="FreeSans",labelfontsize=10];
+  node [fontname="FreeSans",fontsize=10,shape=record];
+  Node1 [label="JavaRenderBuffer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="FreeSans"];
+  Node2 [label="JavaRender",height=0.2,width=0.4,color="black",URL="$class_java_render.html",tooltip="レンダインターフェース。"];
+  Node3 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="FreeSans"];
+  Node3 [label="JavaRenderStatic",height=0.2,width=0.4,color="black",URL="$class_java_render_static.html",tooltip="レンダインターフェース。"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="repaint_time\nrender_time\npaint_time\nclear_time",fontname="FreeSans"];
+  Node4 [label="Perf",height=0.2,width=0.4,color="black",URL="$class_perf.html",tooltip="パフォーマンス計測。"];
+  Node5 -> Node4 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="FreeSans"];
+  Node5 [label="PerfStatic",height=0.2,width=0.4,color="black",URL="$class_perf_static.html",tooltip="パフォーマンス計測。"];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="render_fontp\nrender_font",fontname="FreeSans"];
+  Node6 [label="JavaRenderTexture",height=0.2,width=0.4,color="black",URL="$class_java_render_texture.html",tooltip="ポリゴン塗りつぶし用テクスチャ、文字列描画用フォント。..."];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="render_draw\nrender1\nrender2\nrender_paint",fontname="FreeSans"];
+  Node7 [label="JavaRenderAbstract",height=0.2,width=0.4,color="black",URL="$class_java_render_abstract.html",tooltip="レンダの基本クラス。"];
+  Node2 -> Node7 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="FreeSans"];
+}

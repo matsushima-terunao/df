@@ -1,0 +1,53 @@
+/**
+ * @file
+ *
+ * $Id: java.lang.Integer,v 1.5 2007/11/30 22:42:27 matsushima Exp $
+ *
+ * java.lang.Integer : 
+ *
+ * @author  0.0 2005/03/19 matsushima h2java
+ * @author  0.1 2006/07/27 matsushima cpp2javalib
+ * @version $Revision: 1.5 $
+ * @since   0.0 2005/03/19 matsushima h2java
+ *
+ * $Log: java.lang.Integer,v $
+ * Revision 1.5  2007/11/30 22:42:27  matsushima
+ * 再登録
+ *
+ * Revision 1.4  2007/05/11 14:37:31  matsushima
+ * no message
+ *
+ * Revision 1.3  2007/05/08 15:24:46  matsushima
+ * スタティックメンバアクセス :: -> .
+ *
+ * Revision 1.2  2006/08/18 11:39:55  matsushima
+ * no message
+ *
+ * Revision 1.1.1.1  2006/08/17 20:26:00  matsushima
+ * new
+ *
+ */
+
+#ifndef _JAVA_LANG_INTEGER_
+#define _JAVA_LANG_INTEGER_
+
+#include "../../cpp2javalib.h"
+
+/*------------------------------------------------------------*/
+
+class Integer : public Object
+{
+public:
+    Integer(int value);
+    virtual String toString();
+    static String toHexString(int i);
+public:
+	// C++
+    operator const int();
+protected:
+    int value;
+};
+
+/*------------------------------------------------------------*/
+
+#endif /* #ifndef _JAVA_LANG_INTEGER_ */

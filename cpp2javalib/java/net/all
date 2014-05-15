@@ -1,0 +1,24 @@
+/**
+ * @file
+ *
+ * $Id: java.net.h,v 1.1.1.1 2006/08/17 20:26:01 matsushima Exp $
+ *
+ * java.net.h : 
+ *
+ * @author  0.0 2005/03/19 matsushima h2java
+ * @author  0.1 2006/07/26 matsushima cpp2javalib
+ * @version $Revision: 1.1.1.1 $
+ * @since   0.0 2005/03/19 matsushima h2java
+ *
+ * $Log: java.net.h,v $
+ * Revision 1.1.1.1  2006/08/17 20:26:01  matsushima
+ * new
+ *
+ */
+
+#ifndef _JAVA_NET_H_
+#define _JAVA_NET_H_
+
+#include "URL"
+
+#endif /* #ifndef _JAVA_NET_H_ */

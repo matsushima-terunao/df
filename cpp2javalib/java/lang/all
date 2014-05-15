@@ -1,0 +1,34 @@
+/**
+ * @file
+ *
+ * $Id: h,v 1.1.1.1 2006/08/17 20:26:00 matsushima Exp $
+ *
+ * h : 
+ *
+ * @author  0.0 2005/03/19 matsushima h2java
+ * @author  0.1 2006/07/20 matsushima cpp2javalib
+ * @version $Revision: 1.1.1.1 $
+ * @since   0.0 2005/03/19 matsushima h2java
+ *
+ * $Log: h,v $
+ * Revision 1.1.1.1  2006/08/17 20:26:00  matsushima
+ * new
+ *
+ */
+
+#ifndef _JAVA_LANG_H_
+#define _JAVA_LANG_H_
+
+#include "Object"
+#include "String"
+#include "Integer"
+#include "Math"
+#include "Runnable"
+#include "Runtime"
+#include "System"
+#include "Thread"
+#include "Throwable"
+#include "Exception"
+#include "InterruptedException"
+
+#endif /* #ifndef _JAVA_LANG_H_ */

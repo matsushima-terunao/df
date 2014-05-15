@@ -1,0 +1,85 @@
+/**
+ * @file
+ *
+ * $Id: java.awt.Component,v 1.3 2007/11/30 22:42:27 matsushima Exp $
+ *
+ * java.awt.Component : 
+ *
+ * @author  0.0 2005/03/19 matsushima h2java
+ * @author  0.1 2006/07/21 matsushima cpp2javalib
+ * @version $Revision: 1.3 $
+ * @since   0.0 2005/03/19 matsushima h2java
+ *
+ * $Log: java.awt.Component,v $
+ * Revision 1.3  2007/11/30 22:42:27  matsushima
+ * çƒìoò^
+ *
+ * Revision 1.2  2007/05/14 05:21:53  matsushima
+ * no message
+ *
+ * Revision 1.1.1.1  2006/08/17 20:26:00  matsushima
+ * new
+ *
+ */
+
+#ifndef _JAVA_AWT_COMPONENT_
+#define _JAVA_AWT_COMPONENT_
+
+#include "../../cpp2javalib.h"
+#include "image/ImageObserver"
+#include <list>
+
+class Graphics;
+class Image;
+class ImageProducer;
+class KeyListener;
+class MouseListener;
+class MouseMotionListener;
+class Rectangle;
+
+/*------------------------------------------------------------*/
+
+class Component : public Object
+    , public ImageObserver//, MenuContainer, Serialize
+{
+public:
+    Component();
+    virtual Image* createImage(ImageProducer* producer);
+    virtual Image* createImage(int width, int height);
+    virtual bool prepareImage(Image* image, ImageObserver* observer);
+    virtual int checkImage(Image* image, ImageObserver* observer) { return -1; }
+    virtual void addKeyListener(KeyListener* l);
+    virtual void addMouseListener(MouseListener* l);
+    virtual void addMouseMotionListener(MouseMotionListener* l);
+    virtual void removeKeyListener(KeyListener* l);
+    virtual void removeMouseListener(MouseListener* l);
+    virtual void removeMouseMotionListener(MouseMotionListener* l);
+    virtual void requestFocus();
+    virtual void setSize(int width, int height);
+    virtual Rectangle getBounds();
+    virtual bool isDoubleBuffered();
+    virtual void repaint();
+    virtual void repaint(long rate, int x, int y, int w, int h) { repaint(); }
+    virtual void update(Graphics* g);
+    virtual void paint(Graphics* g);
+protected:
+    std::list<KeyListener*> keylisteners;
+    std::list<MouseListener*> mouselisteners;
+    std::list<MouseMotionListener*> mousemotionlisteners;
+    int modifiers;
+public:
+    void* hwnd;
+protected:
+    bool is_update;
+public:
+    // C++
+    virtual long Component::_WindowProc(
+        void* _hWnd,
+        unsigned int _uMsg,
+        unsigned int _wParam,
+        long _lParam);
+};
+
+/*------------------------------------------------------------*/
+
+#endif /* #ifndef _JAVA_AWT_COMPONENT_ */

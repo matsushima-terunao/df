@@ -1,0 +1,48 @@
+/**
+ * @file
+ *
+ * $Id: java.io.PrintStream,v 1.1.1.1 2006/08/17 20:26:00 matsushima Exp $
+ *
+ * java.io.PrintStream : 
+ *
+ * @author  0.0 2005/03/19 matsushima h2java
+ * @author  0.1 2006/07/13 matsushima cpp2javalib
+ * @version $Revision: 1.1.1.1 $
+ * @since   0.0 2005/03/19 matsushima h2java
+ *
+ * $Log: java.io.PrintStream,v $
+ * Revision 1.1.1.1  2006/08/17 20:26:00  matsushima
+ * new
+ *
+ */
+
+#ifndef _JAVA_IO_PRINTSTREAM_
+#define _JAVA_IO_PRINTSTREAM_
+
+#include "../../cpp2javalib.h"
+
+/*------------------------------------------------------------*/
+
+class PrintStream
+{
+public:
+    PrintStream();
+    void print(const char* x);
+    void print(long x);
+    void println();
+    void println(const char* x);
+    void println(long x);
+protected:
+    friend class AppletViewer;
+    enum
+    {
+        OUT_STDOUT,
+        OUT_OUTPUTDEBUGSTRING,
+        OUT_WINDOW,
+    };
+    int stream;
+};
+
+/*------------------------------------------------------------*/
+
+#endif /* #ifndef _JAVA_IO_PRINTSTREAM_ */
